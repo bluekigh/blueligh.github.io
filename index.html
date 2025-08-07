@@ -49,7 +49,7 @@
             background-color: #ffffff;
             display: flex;
             flex-direction: column; /* 세로 방향으로 요소 배치 */
-            border-left: 1px solid #e2e8f0; /* 좌측 경계선 */
+            border-left: 1px solid #e2e8e0; /* 좌측 경계선 */
         }
 
         /* 오른쪽 패널 - 상단 표시 영역 (7/8) */
@@ -58,7 +58,7 @@
             padding: 1rem;
             overflow-y: auto; /* 내용이 많아지면 스크롤 가능 */
             background-color: #f1f5f9;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8e0;
         }
 
         /* 오른쪽 패널 - 하단 입력 영역 (1/8) */
@@ -157,11 +157,11 @@
             border-radius: 0.25rem;
         }
 
-        /* 정시 알람 버튼 스타일 (추가) */
+        /* 정시 알람 버튼 스타일 */
         #on-the-hour-alarm-button {
             position: absolute;
             bottom: 1rem; /* 하단 마진 */
-            right: 1rem; /* 우측 마진 */
+            left: 1rem; /* 좌측 마진 */
             padding: 0.75rem 1rem;
             background-color: #10b981; /* 녹색 계열 */
             color: white;
@@ -177,24 +177,26 @@
         #on-the-hour-alarm-button:hover {
             background-color: #059669;
         }
-
-        /* 알람 메시지 박스 스타일 */
-        #alarm-message-box {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 2rem 3rem;
-            background-color: #fef2f2;
-            color: #b91c1c;
-            border-radius: 1rem;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            font-size: 1.5rem;
+        
+        /* 텔레그램 테스트 버튼 스타일 */
+        #telegram-test-button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            padding: 0.75rem 1rem;
+            background-color: #0ea5e9; /* 스카이블루 계열 */
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
             font-weight: bold;
-            text-align: center;
-            border: 2px solid #ef4444;
-            display: none; /* 초기에는 숨김 */
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        #telegram-test-button:hover {
+            background-color: #0284c7;
         }
     </style>
 </head>
@@ -203,6 +205,7 @@
         <div class="left-panel">
             <div class="digital-clock">00:00:00</div>
             <button id="on-the-hour-alarm-button" class="rounded-lg shadow-md">정시 알람</button>
+            <button id="telegram-test-button" class="rounded-lg shadow-md">텔레그램 테스트</button>
         </div>
         <div class="right-panel">
             <div class="display-area">
@@ -214,13 +217,7 @@
             </div>
         </div>
     </div>
-    <!-- 알람 소리용 오디오 태그 -->
-    <audio id="alarm-sound">
-        <source src="data:audio/wav;base64,UklGRl9QDwBXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YR9QDw==" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
-    <!-- 알람 메시지 박스 -->
-    <div id="alarm-message-box"></div>
+    <!-- 알람 소리용 오디오 태그 및 메시지 박스 제거 -->
 
     <script>
         // DOM 요소 가져오기
@@ -229,15 +226,23 @@
         const timeInput = document.getElementById('time-input');
         const displayArea = document.querySelector('.display-area');
         const onTheHourAlarmButton = document.getElementById('on-the-hour-alarm-button');
-        const alarmSound = document.getElementById('alarm-sound');
-        const alarmMessageBox = document.getElementById('alarm-message-box');
+        const telegramTestButton = document.getElementById('telegram-test-button'); // 새로 추가된 버튼
+
+        // 텔레그램 봇 설정
+        const TELEGRAM_BOT_TOKEN = "8288538169:AAEuJ1UlPXcHpe1i89I9OIDqC_HbUGTIeAU";
+        const TELEGRAM_CHAT_ID = "7347898366";
+        const TELEGRAM_API_URL = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
         // 저장된 시간 목록 (문자열 배열)
         let scheduledTimes = [];
         // 알람이 울린 시간을 추적하는 Set
         let triggeredAlarms = new Set();
+        // 알람 활성화 상태를 추적하는 변수 (이제 항상 true)
+        let isAlarmEnabled = true;
 
-        // 디지털 시계 업데이트 함수
+        /**
+         * 디지털 시계를 업데이트하는 함수
+         */
         function updateDigitalClock() {
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
@@ -246,21 +251,22 @@
             digitalClock.textContent = `${hours}:${minutes}:${seconds}`;
         }
 
-        // 두 시간 문자열 간의 가장 짧은 시간 차이를 밀리초 단위로 계산 (양수: 미래, 음수: 과거)
+        /**
+         * 두 시간 문자열 간의 가장 짧은 시간 차이를 밀리초 단위로 계산합니다.
+         * @param {string} targetTimeStr "HH:MM" 형식의 목표 시간
+         * @param {Date} now 현재 시간 Date 객체
+         * @returns {number} 밀리초 단위의 시간 차이 (양수: 미래, 음수: 과거)
+         */
         function getShortestTimeDifferenceInMilliseconds(targetTimeStr, now) {
             const [targetHour, targetMinute] = targetTimeStr.split(':').map(Number);
-
-            // 오늘, 내일, 어제 날짜의 목표 시간 Date 객체 생성
             const targetToday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), targetHour, targetMinute, 0);
-            const targetTomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, targetHour, targetMinute, 0);
-            const targetYesterday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, targetHour, targetMinute, 0);
+            const targetTomorrow = new Date(new Date(now.getTime()).setDate(now.getDate() + 1), targetHour, targetMinute, 0);
+            const targetYesterday = new Date(new Date(now.getTime()).setDate(now.getDate() - 1), targetHour, targetMinute, 0);
 
-            // 현재 시간과의 차이 계산 (밀리초)
             const diffToday = targetToday.getTime() - now.getTime();
             const diffTomorrow = targetTomorrow.getTime() - now.getTime();
             const diffYesterday = targetYesterday.getTime() - now.getTime();
 
-            // 가장 작은 절대값을 가진 차이 선택
             let shortestDiff = diffToday;
             if (Math.abs(diffTomorrow) < Math.abs(shortestDiff)) {
                 shortestDiff = diffTomorrow;
@@ -272,7 +278,11 @@
             return shortestDiff;
         }
 
-        // 밀리초 단위 시간 차이를 "X시간 Y분 Z초 전/후" 형식으로 포맷
+        /**
+         * 밀리초 단위 시간 차이를 "X시간 Y분 Z초 전/후" 형식으로 포맷합니다.
+         * @param {number} diffMs 밀리초 단위의 시간 차이
+         * @returns {string} 포맷된 시간 문자열
+         */
         function formatTimeDifference(diffMs) {
             const absDiffMs = Math.abs(diffMs);
             const totalSeconds = Math.floor(absDiffMs / 1000);
@@ -283,19 +293,12 @@
 
             let diffText = '';
 
-            // 5분 미만일 경우 초까지 표시
             if (totalMinutes < 5) {
-                if (hours > 0) {
-                    diffText += `${hours}시간 `;
-                }
-                if (minutes > 0 || hours > 0) { // 시간이 있거나 분이 0이 아니면 분 표시
-                    diffText += `${minutes}분 `;
-                }
+                if (hours > 0) { diffText += `${hours}시간 `; }
+                if (minutes > 0 || hours > 0) { diffText += `${minutes}분 `; }
                 diffText += `${seconds}초`;
-            } else { // 5분 이상일 경우 시/분만 표시
-                if (hours > 0) {
-                    diffText += `${hours}시간 `;
-                }
+            } else {
+                if (hours > 0) { diffText += `${hours}시간 `; }
                 diffText += `${minutes}분`;
             }
 
@@ -308,16 +311,66 @@
             }
         }
 
-        // 알람 메시지 표시 함수
-        function showAlarmMessage(time) {
-            alarmMessageBox.textContent = `${time} 알람이 울립니다!`;
-            alarmMessageBox.style.display = 'block';
-            setTimeout(() => {
-                alarmMessageBox.style.display = 'none';
-            }, 3000); // 3초 후 메시지 숨기기
+        /**
+         * 커스텀 메시지 박스를 표시하는 헬퍼 함수
+         * @param {string} message 표시할 메시지
+         * @param {string} bgColor 배경색
+         * @param {string} textColor 글자색
+         */
+        function showCustomMessage(message, bgColor, textColor) {
+            const messageBox = document.createElement('div');
+            messageBox.textContent = message;
+            messageBox.style.cssText = `
+                position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                background-color: ${bgColor}; color: ${textColor}; padding: 1rem 2rem;
+                border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000;
+                font-weight: bold;
+            `;
+            document.body.appendChild(messageBox);
+            setTimeout(() => messageBox.remove(), 2000);
         }
 
-        // 표시 영역 업데이트 및 시간 정렬 함수
+        /**
+         * 텔레그램으로 메시지를 전송하는 함수 (디버깅 기능 강화)
+         * @param {string} message 전송할 메시지
+         */
+        async function sendTelegramMessage(message) {
+            // 토큰과 채팅 ID가 유효한지 확인
+            if (TELEGRAM_BOT_TOKEN === "YOUR_BOT_TOKEN" || TELEGRAM_CHAT_ID === "YOUR_CHAT_ID") {
+                showCustomMessage("텔레그램 알람: 봇 토큰 또는 채팅 ID가 설정되지 않았습니다.", '#fee2e2', '#dc2626');
+                return;
+            }
+
+            const payload = {
+                chat_id: TELEGRAM_CHAT_ID,
+                text: message
+            };
+
+            try {
+                const response = await fetch(TELEGRAM_API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+
+                if (data.ok) {
+                    console.log("텔레그램 메시지 전송 성공:", data);
+                    showCustomMessage(`텔레그램 메시지 전송 완료: ${message}`, '#d1fae5', '#065f46');
+                } else {
+                    console.error("텔레그램 메시지 전송 실패:", data);
+                    showCustomMessage(`텔레그램 메시지 전송 실패: ${data.description || '알 수 없는 오류'}`, '#fee2e2', '#dc2626');
+                }
+            } catch (error) {
+                console.error("텔레그램 메시지 전송 중 오류 발생:", error);
+                showCustomMessage(`네트워크 오류: ${error.message}`, '#fee2e2', '#dc2626');
+            }
+        }
+
+        /**
+         * 표시 영역을 업데이트하고 시간을 정렬하는 함수
+         */
         function updateDisplayArea() {
             const now = new Date();
             displayArea.innerHTML = ''; // 기존 내용 지우기
@@ -325,23 +378,23 @@
             const pastTimes = [];
             const futureTimes = [];
 
-            // 입력된 시간들을 과거/미래로 분류하고 차이 계산
             scheduledTimes.forEach(timeStr => {
                 const diff = getShortestTimeDifferenceInMilliseconds(timeStr, now);
-                if (diff <= 0) { // 0ms 포함하여 과거로 분류
+                if (diff <= 0) {
                     pastTimes.push({ time: timeStr, diff: diff });
                 } else {
                     futureTimes.push({ time: timeStr, diff: diff });
                 }
 
-                // S3: 3분 남았을 때 알람 트리거
                 const diffMinutes = diff / (1000 * 60);
-                if (diffMinutes > 2.99 && diffMinutes < 3.01 && !triggeredAlarms.has(timeStr)) {
-                    // 알람 소리 재생
-                    alarmSound.play();
-                    // 알람 메시지 표시
-                    showAlarmMessage(timeStr);
-                    // 알람이 울렸음을 기록
+
+                // 알람 활성화 상태일 때, 알람 트리거 조건 확인
+                if (isAlarmEnabled && Math.abs(diffMinutes) < 0.01 && !triggeredAlarms.has(timeStr)) {
+                    console.log(`알람 울림: ${timeStr}`);
+
+                    // 텔레그램 메시지 전송
+                    sendTelegramMessage(`[알람] ${timeStr} 알람이 울립니다!`);
+
                     triggeredAlarms.add(timeStr);
                 }
             });
@@ -353,24 +406,10 @@
 
             // 과거 시간들을 먼저 렌더링
             pastTimes.forEach(item => {
-                const timeBox = document.createElement('div');
-                timeBox.classList.add('time-box');
-                timeBox.setAttribute('data-time', item.time); // 삭제를 위해 원본 시간 저장
-                const formattedDiff = formatTimeDifference(item.diff);
-                
-                // S1: 5분 미만일 경우 urgent 클래스 추가
-                if (Math.abs(item.diff) / (1000 * 60) <= 5 && item.diff <= 0) { // 과거 시간 중 5분 이내
-                    timeBox.classList.add('urgent');
-                }
-
-                timeBox.innerHTML = `
-                    <span class="time-display">${item.time}</span>
-                    <span class="time-diff">${formattedDiff}</span>
-                `;
+                const timeBox = createTimeBox(item);
                 displayArea.appendChild(timeBox);
             });
 
-            // 현재 시간 구분선 추가
             const currentTimeSeparator = document.createElement('div');
             currentTimeSeparator.classList.add('current-time-separator');
             currentTimeSeparator.textContent = '--- 현재 시간 ---';
@@ -378,38 +417,44 @@
 
             // 미래 시간들을 렌더링
             futureTimes.forEach(item => {
-                const timeBox = document.createElement('div');
-                timeBox.classList.add('time-box');
-                timeBox.setAttribute('data-time', item.time); // 삭제를 위해 원본 시간 저장
-                const formattedDiff = formatTimeDifference(item.diff);
-
-                // S1: 5분 미만일 경우 urgent 클래스 추가
-                if (Math.abs(item.diff) / (1000 * 60) <= 5 && item.diff >= 0) { // 미래 시간 중 5분 이내
-                    timeBox.classList.add('urgent');
-                }
-
-                timeBox.innerHTML = `
-                    <span class="time-display">${item.time}</span>
-                    <span class="time-diff">${formattedDiff}</span>
-                `;
+                const timeBox = createTimeBox(item);
                 displayArea.appendChild(timeBox);
             });
-
-            // 모든 time-box에 클릭 이벤트 리스너 추가 (삭제 기능)
-            document.querySelectorAll('.time-box').forEach(box => {
-                box.addEventListener('click', (event) => {
-                    const timeToDelete = event.currentTarget.getAttribute('data-time');
-                    scheduledTimes = scheduledTimes.filter(time => time !== timeToDelete);
-                    triggeredAlarms.delete(timeToDelete); // 삭제 시 알람 기록도 삭제
-                    updateDisplayArea(); // 삭제 후 목록 다시 그리기
-                });
-            });
         }
+        
+        /**
+         * 시간 박스 요소를 생성하는 헬퍼 함수
+         * @param {object} item {time, diff} 객체
+         * @returns {HTMLElement} 생성된 div 요소
+         */
+        function createTimeBox(item) {
+            const timeBox = document.createElement('div');
+            timeBox.classList.add('time-box');
+            timeBox.setAttribute('data-time', item.time);
+            
+            if (Math.abs(item.diff) / (1000 * 60) <= 5) {
+                timeBox.classList.add('urgent');
+            }
+
+            const formattedDiff = formatTimeDifference(item.diff);
+            timeBox.innerHTML = `
+                <span class="time-display">${item.time}</span>
+                <span class="time-diff">${formattedDiff}</span>
+            `;
+
+            timeBox.addEventListener('click', (event) => {
+                const timeToDelete = event.currentTarget.getAttribute('data-time');
+                scheduledTimes = scheduledTimes.filter(time => time !== timeToDelete);
+                triggeredAlarms.delete(timeToDelete);
+                updateDisplayArea();
+            });
+            return timeBox;
+        }
+
 
         // 페이지 로드 시 초기화 및 업데이트 시작
         window.onload = function() {
-            updateDigitalClock(); // 초기 디지털 시계 설정
-            // 1초마다 디지털 시계 업데이트 및 표시 영역 업데이트
+            updateDigitalClock();
             setInterval(() => {
                 updateDigitalClock();
                 updateDisplayArea();
@@ -418,88 +463,57 @@
 
         // '추가' 버튼 클릭 이벤트 리스너
         addButton.addEventListener('click', () => {
-            const selectedTime = timeInput.value; // "HH:MM" 형식의 문자열
+            const selectedTime = timeInput.value;
             if (!selectedTime) {
-                // 커스텀 메시지 박스 사용
-                const messageBox = document.createElement('div');
-                messageBox.textContent = '시간을 입력해주세요.';
-                messageBox.style.cssText = `
-                    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                    background-color: #fee2e2; color: #dc2626; padding: 1rem 2rem;
-                    border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000;
-                    font-weight: bold;
-                `;
-                document.body.appendChild(messageBox);
-                setTimeout(() => messageBox.remove(), 2000); // 2초 후 메시지 제거
+                showCustomMessage('시간을 입력해주세요.', '#fee2e2', '#dc2626');
                 return;
             }
-
-            // 중복 시간 방지 (선택 사항)
             if (!scheduledTimes.includes(selectedTime)) {
                 scheduledTimes.push(selectedTime);
-                updateDisplayArea(); // 새로운 시간 추가 후 표시 영역 업데이트
+                updateDisplayArea();
             } else {
-                const messageBox = document.createElement('div');
-                messageBox.textContent = '이미 추가된 시간입니다.';
-                messageBox.style.cssText = `
-                    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                    background-color: #fff3cd; color: #856404; padding: 1rem 2rem;
-                    border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000;
-                    font-weight: bold;
-                `;
-                document.body.appendChild(messageBox);
-                setTimeout(() => messageBox.remove(), 2000); // 2초 후 메시지 제거
+                showCustomMessage('이미 추가된 시간입니다.', '#fff3cd', '#856404');
             }
-            
-            timeInput.value = ''; // 입력 필드 초기화
+            timeInput.value = '';
         });
 
         // 시간 입력창에서 Enter 키 입력 시 버튼 클릭 이벤트 발생
         timeInput.addEventListener('keydown', (event) => {
             if (event.key === 'Enter') {
-                event.preventDefault(); // 기본 Enter 동작(폼 제출 등) 방지
-                addButton.click(); // '추가' 버튼 클릭 이벤트 발생
+                event.preventDefault();
+                addButton.click();
             }
         });
 
-        // S2: 정시 알람 버튼 클릭 이벤트 리스너
+        // 정시 알람 버튼 클릭 이벤트 리스너
         onTheHourAlarmButton.addEventListener('click', () => {
             const now = new Date();
-            let currentHour = now.getHours();
-            let nextAlarmHour = currentHour;
-
-            // 현재 분 또는 초가 0이 아니면 다음 정각부터 시작
+            let nextAlarmHour = now.getHours();
             if (now.getMinutes() > 0 || now.getSeconds() > 0) {
                 nextAlarmHour++;
             }
             
             let foundNextAvailableTime = false;
-            // 24시간 동안 다음 정각을 순회하며 찾기
             for (let i = 0; i < 24; i++) {
                 let candidateHour = (nextAlarmHour + i) % 24;
                 const candidateTime = `${String(candidateHour).padStart(2, '0')}:00`;
 
                 if (!scheduledTimes.includes(candidateTime)) {
                     scheduledTimes.push(candidateTime);
-                    updateDisplayArea(); // 새로운 시간 추가 후 표시 영역 업데이트
+                    updateDisplayArea();
                     foundNextAvailableTime = true;
-                    break; // 찾았으면 반복 중단
+                    break;
                 }
             }
 
             if (!foundNextAvailableTime) {
-                // 24시간 모두 등록되어 있다면 알림
-                const messageBox = document.createElement('div');
-                messageBox.textContent = '모든 정각 시간이 이미 추가되었습니다.';
-                messageBox.style.cssText = `
-                    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                    background-color: #fee2e2; color: #dc2626; padding: 1rem 2rem;
-                    border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000;
-                    font-weight: bold;
-                `;
-                document.body.appendChild(messageBox);
-                setTimeout(() => messageBox.remove(), 2000); // 2초 후 메시지 제거
+                showCustomMessage('모든 정각 시간이 이미 추가되었습니다.', '#fee2e2', '#dc2626');
             }
+        });
+        
+        // 텔레그램 테스트 버튼 클릭 이벤트 리스너 (새로 추가)
+        telegramTestButton.addEventListener('click', () => {
+            sendTelegramMessage('[테스트] 텔레그램 알람이 잘 작동합니다.');
         });
     </script>
 </body>
