@@ -156,33 +156,12 @@
             background-color: #eff6ff;
             border-radius: 0.25rem;
         }
-
-        /* 정시 알람 버튼 스타일 */
-        #on-the-hour-alarm-button {
+        
+        /* 텔레그램 테스트 버튼 스타일 (위치 변경) */
+        #telegram-test-button {
             position: absolute;
             bottom: 1rem; /* 하단 마진 */
             left: 1rem; /* 좌측 마진 */
-            padding: 0.75rem 1rem;
-            background-color: #10b981; /* 녹색 계열 */
-            color: white;
-            border: none;
-            border-radius: 0.5rem; /* 둥근 모서리 */
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: background-color 0.2s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        #on-the-hour-alarm-button:hover {
-            background-color: #059669;
-        }
-        
-        /* 텔레그램 테스트 버튼 스타일 */
-        #telegram-test-button {
-            position: absolute;
-            bottom: 1rem;
-            right: 1rem;
             padding: 0.75rem 1rem;
             background-color: #0ea5e9; /* 스카이블루 계열 */
             color: white;
@@ -198,14 +177,35 @@
         #telegram-test-button:hover {
             background-color: #0284c7;
         }
+        
+        /* 정시 알람 버튼 스타일 (위치 변경) */
+        #on-the-hour-alarm-button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            padding: 0.75rem 1rem;
+            background-color: #10b981; /* 녹색 계열 */
+            color: white;
+            border: none;
+            border-radius: 0.5rem; /* 둥근 모서리 */
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        #on-the-hour-alarm-button:hover {
+            background-color: #059669;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="left-panel">
             <div class="digital-clock">00:00:00</div>
-            <button id="on-the-hour-alarm-button" class="rounded-lg shadow-md">정시 알람</button>
             <button id="telegram-test-button" class="rounded-lg shadow-md">텔레그램 테스트</button>
+            <button id="on-the-hour-alarm-button" class="rounded-lg shadow-md">정시 알람</button>
         </div>
         <div class="right-panel">
             <div class="display-area">
@@ -226,7 +226,7 @@
         const timeInput = document.getElementById('time-input');
         const displayArea = document.querySelector('.display-area');
         const onTheHourAlarmButton = document.getElementById('on-the-hour-alarm-button');
-        const telegramTestButton = document.getElementById('telegram-test-button'); // 새로 추가된 버튼
+        const telegramTestButton = document.getElementById('telegram-test-button');
 
         // 텔레그램 봇 설정
         const TELEGRAM_BOT_TOKEN = "8288538169:AAEuJ1UlPXcHpe1i89I9OIDqC_HbUGTIeAU";
@@ -260,8 +260,8 @@
         function getShortestTimeDifferenceInMilliseconds(targetTimeStr, now) {
             const [targetHour, targetMinute] = targetTimeStr.split(':').map(Number);
             const targetToday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), targetHour, targetMinute, 0);
-            const targetTomorrow = new Date(new Date(now.getTime()).setDate(now.getDate() + 1), targetHour, targetMinute, 0);
-            const targetYesterday = new Date(new Date(now.getTime()).setDate(now.getDate() - 1), targetHour, targetMinute, 0);
+            const targetTomorrow = new Date(targetToday.getTime() + 24 * 60 * 60 * 1000);
+            const targetYesterday = new Date(targetToday.getTime() - 24 * 60 * 60 * 1000);
 
             const diffToday = targetToday.getTime() - now.getTime();
             const diffTomorrow = targetTomorrow.getTime() - now.getTime();
@@ -379,23 +379,27 @@
             const futureTimes = [];
 
             scheduledTimes.forEach(timeStr => {
-                const diff = getShortestTimeDifferenceInMilliseconds(timeStr, now);
-                if (diff <= 0) {
-                    pastTimes.push({ time: timeStr, diff: diff });
-                } else {
-                    futureTimes.push({ time: timeStr, diff: diff });
-                }
-
-                const diffMinutes = diff / (1000 * 60);
+                // 시간 표시 및 정렬을 위한 시간 차이 (정시 기준)
+                const diffForDisplay = getShortestTimeDifferenceInMilliseconds(timeStr, now);
+                
+                // 알람 트리거를 위한 시간 차이 (3분 전 기준)
+                const [targetHour, targetMinute] = timeStr.split(':').map(Number);
+                const targetDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), targetHour, targetMinute, 0);
+                const earlyAlarmDate = new Date(targetDate.getTime() - 3 * 60 * 1000);
+                const diffForAlarm = earlyAlarmDate.getTime() - now.getTime();
 
                 // 알람 활성화 상태일 때, 알람 트리거 조건 확인
-                if (isAlarmEnabled && Math.abs(diffMinutes) < 0.01 && !triggeredAlarms.has(timeStr)) {
-                    console.log(`알람 울림: ${timeStr}`);
-
-                    // 텔레그램 메시지 전송
-                    sendTelegramMessage(`[알람] ${timeStr} 알람이 울립니다!`);
-
+                // diffForAlarm이 -1.5초 ~ +1.5초 이내에 있고, 아직 알람이 울리지 않았다면 트리거
+                if (isAlarmEnabled && Math.abs(diffForAlarm) <= 1500 && !triggeredAlarms.has(timeStr)) {
+                    console.log(`[3분 전] 알람 울림: ${timeStr}`);
+                    sendTelegramMessage(`[알람] ${timeStr} 3분 전입니다!`);
                     triggeredAlarms.add(timeStr);
+                }
+
+                if (diffForDisplay <= 0) {
+                    pastTimes.push({ time: timeStr, diff: diffForDisplay });
+                } else {
+                    futureTimes.push({ time: timeStr, diff: diffForDisplay });
                 }
             });
 
