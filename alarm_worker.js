@@ -20,7 +20,7 @@ function checkAlarms() {
   }
 }
 
-self.onmessage = function(e) {
+self.onmessage = function (e) {
   const data = e.data;
   if (data && data.type === "setAlarms") {
     alarms = data.alarms || [];

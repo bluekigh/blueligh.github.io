@@ -38671,7 +38671,7 @@ this.w6()
 $.a7.p2$.push(new A.ahp(this))},
 ac7(){var s,r=this
 if(r.d!=null)return
-s=new Worker("alarm_worker.js")
+s=new Worker("./alarm_worker.js")
 s.toString
 r.d=s
 r.Db()
