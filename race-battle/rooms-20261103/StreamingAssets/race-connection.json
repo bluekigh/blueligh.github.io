@@ -1,0 +1,4 @@
+{
+  "server": "wss://bite-respondents-instant-para.trycloudflare.com",
+  "queueApi": "https://dark-beyond-gratis-connector.trycloudflare.com"
+}
