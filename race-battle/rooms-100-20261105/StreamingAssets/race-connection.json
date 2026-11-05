@@ -1,0 +1,4 @@
+{
+  "server": "wss://forge-instance-those-documented.trycloudflare.com",
+  "queueApi": "https://stadium-lounge-portal-varying.trycloudflare.com"
+}

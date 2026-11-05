@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07121c">
+  <title>Race Battle</title>
+  <link rel="icon" href="TemplateData/favicon.ico?v=9c13beb90ee8f705">
+  <style>:root{color-scheme:dark;font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:#07121c;color:#f4f8fb}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none}
+[hidden]{display:none!important}
+#unity-container,#unity-fullscreen-container{position:fixed;inset:0;width:100%;height:100%;height:100dvh}
+#unity-canvas{display:block;width:100%;height:100%;background:#07121c;touch-action:none}
+#race-loading{position:fixed;inset:0;z-index:1000;display:grid;align-items:safe center;justify-items:center;overflow:auto;padding:max(24px,env(safe-area-inset-top)) max(24px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(24px,env(safe-area-inset-left));background:radial-gradient(ellipse at 15% 0%,#123343 0,transparent 55%),radial-gradient(ellipse at 100% 100%,#12302d 0,transparent 50%),#07121c}
+.loading-card{width:min(100%,480px);padding:34px;border:1px solid #28424d;border-radius:24px;background:#0b1925;box-shadow:0 20px 80px #0005}
+.brand{display:flex;align-items:center;gap:10px;letter-spacing:3px;font-size:14px;font-weight:800;margin-bottom:40px}
+.brand-mark{display:grid;place-items:center;background:#72edc0;color:#071c1b;border-radius:9px;width:34px;height:34px;font-size:30px;line-height:1;letter-spacing:0}
+.eyebrow{display:flex;align-items:center;gap:9px;color:#72edc0;font-size:12px;font-weight:650;margin-bottom:13px}
+.activity-dot{width:7px;height:7px;flex:none;border-radius:50%;background:#72edc0;box-shadow:0 0 0 5px #72edc014;animation:breathe 1.6s ease-in-out infinite}
+h1{margin:0;font-size:clamp(22px,5.5vw,29px);line-height:1.35;font-weight:750;letter-spacing:-1px}
+#loading-status{color:#acbdc9;font-size:14px;line-height:1.7;min-height:24px;margin:13px 0 30px;overflow-wrap:anywhere}
+.progress-label{display:flex;align-items:baseline;justify-content:space-between;gap:15px;color:#bccbd4;font-size:12px;margin-bottom:13px}
+#loading-percent{font-size:31px;font-weight:650;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:#f4f8fb}
+#loading-percent span{font-size:15px;margin-left:3px;color:#a3b7c3}
+#loading-progress{height:10px;border-radius:10px;background:#243541;overflow:hidden}
+#loading-fill{height:100%;width:0;background:linear-gradient(90deg,#3ccfc1,#89efad);border-radius:inherit;transition:width .25s ease}
+.loading-meta{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;color:#8ea4b4;font-variant-numeric:tabular-nums}
+#loading-hint,#loading-warning{font-size:13px;line-height:1.65;color:#a1b5c3;margin:25px 0 0;overflow-wrap:anywhere}
+#loading-warning{color:#ffd18a}
+#loading-actions{margin-top:18px}#race-loading button{width:100%;min-height:46px;padding:11px 20px;border:1px solid #4f817d;border-radius:10px;background:#163a3b;color:#c5ffeb;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+#race-loading button:hover{background:#215052}#race-loading button:focus-visible,#race-loading summary:focus-visible{outline:3px solid #72edc0;outline-offset:4px}
+details{margin-top:18px;font-size:12px;color:#acbdc9}summary{cursor:pointer;padding:6px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:140px;overflow:auto;padding:12px;background:#05111a;border-radius:8px;user-select:text}
+.loading-bottom{border-top:1px solid #253946;padding-top:20px;margin-top:28px;font-size:12px;line-height:1.6;color:#7f98a8}
+body[data-race-state="failed"] .activity-dot{animation:none;background:#ffad89;box-shadow:none}body[data-race-state="failed"] .eyebrow{color:#ffad89}
+.no-script{color:#ffd18a;font-size:14px;line-height:1.6}
+@keyframes breathe{50%{opacity:.4;transform:scale(.85)}}
+@media(max-width:420px){.loading-card{padding:25px 22px;border-radius:20px}.brand{margin-bottom:32px}#race-loading{padding:20px}}
+@media(max-height:480px) and (min-width:520px){#race-loading{padding:14px}.loading-card{width:min(100%,620px);padding:20px 28px}.brand{margin-bottom:16px}.brand-mark{width:27px;height:27px;font-size:24px}.eyebrow{margin-bottom:8px}h1{font-size:23px}#loading-status{margin:7px 0 12px}.progress-label{margin-bottom:5px}#loading-percent{font-size:25px}#loading-hint{margin-top:12px}.loading-bottom{display:none}#loading-actions{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.activity-dot{animation:none}#loading-fill{transition:none}}
+</style>
+</head>
+<body data-race-state="loading">
+  <div id="unity-container">
+    <div id="unity-fullscreen-container">
+      <canvas id="unity-canvas" width="960" height="600" tabindex="-1" aria-label="Race Battle 게임"></canvas>
+    </div>
+  </div>
+  <main id="race-loading" aria-labelledby="loading-title">
+    <section class="loading-card">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">»</span> RACE BATTLE</div>
+      <div class="eyebrow"><span class="activity-dot" aria-hidden="true"></span><span id="loading-phase">접속 준비</span></div>
+      <h1 id="loading-title">레이스를 준비하고 있어요</h1>
+      <p id="loading-status" role="status" aria-live="polite">게임 로더를 불러오고 있습니다.</p>
+      <div class="progress-label"><span>불러오기 진행률</span><strong id="loading-percent">0<span>%</span></strong></div>
+      <div id="loading-progress" role="progressbar" aria-label="게임 불러오기" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="loading-fill"></div>
+      </div>
+      <div class="loading-meta"><span id="loading-elapsed" aria-hidden="true">0초 경과</span><span id="loading-step">1 / 3</span></div>
+      <p id="loading-hint">처음 접속할 때는 조금 더 걸릴 수 있어요.</p>
+      <p id="loading-warning" hidden></p>
+      <div id="loading-actions" hidden><button id="loading-retry" type="button">다시 불러오기</button></div>
+      <details id="loading-details" hidden><summary>오류 상세 보기</summary><pre id="loading-error"></pre></details>
+      <noscript><p class="no-script">게임을 실행하려면 브라우저에서 JavaScript를 허용해주세요.</p></noscript>
+      <div class="loading-bottom">준비가 끝나면 닉네임을 입력하고 바로 입장하세요.</div>
+    </section>
+  </main>
+  <script id="race-build-config" type="application/json">{"loaderUrl": "Build/WebGLReady.loader.js?v=43fa24589e327d23", "config": {"dataUrl": "Build/WebGLReady.data.unityweb?v=ee2b49d9efbaa0bb", "frameworkUrl": "Build/WebGLReady.framework.js.unityweb?v=fa0674ff13eb3c18", "codeUrl": "Build/WebGLReady.wasm.unityweb?v=4afa0c8108fe6fd1", "streamingAssetsUrl": "StreamingAssets", "companyName": "bluelighgamebox", "productName": "racebattle", "productVersion": "0.5.1", "arguments": []}}</script>
+  <script>(() => {
+  "use strict";
+  const byId = id => document.getElementById(id);
+  const overlay = byId("race-loading"), progress = byId("loading-progress");
+  const startedAt = Date.now();
+  let lastActivity = startedAt, highest = 0, state = "loading", phase = "loader";
+  let slow = false;
+  const timer = setInterval(updateWait, 1000);
+  const defaultHint = "처음 접속할 때는 조금 더 걸릴 수 있어요.";
+
+  function updateWait() {
+    if (state !== "loading") return;
+    byId("loading-elapsed").textContent = Math.floor((Date.now() - startedAt) / 1000) + "초 경과";
+    if (Date.now() - lastActivity >= 20000) {
+      slow = true;
+      byId("loading-hint").textContent = "준비가 예상보다 오래 걸리고 있어요. 압축 해제나 실행 준비 중에는 숫자가 잠시 멈출 수 있습니다. 계속 기다리거나 다시 불러올 수 있어요.";
+      byId("loading-actions").hidden = false;
+    }
+  }
+  function activity() {
+    lastActivity = Date.now();
+    if (slow) {
+      slow = false;
+      byId("loading-hint").textContent = defaultHint;
+      byId("loading-actions").hidden = true;
+    }
+  }
+  function setPhase(next) {
+    if (phase === next) return;
+    phase = next; activity();
+    const preparing = next === "preparing";
+    byId("loading-phase").textContent = preparing ? "마지막 준비" : "게임 불러오기";
+    byId("loading-step").textContent = preparing ? "3 / 3" : "2 / 3";
+    byId("loading-status").textContent = preparing ? "파일을 불러왔습니다. 게임을 시작할 준비 중입니다." : "게임 파일을 불러오고 있습니다.";
+  }
+  function onProgress(value) {
+    if (state !== "loading" || !Number.isFinite(value)) return;
+    const bounded = Math.max(0, Math.min(1, value));
+    if (bounded > highest) { highest = bounded; activity(); }
+    if (highest >= 1) setPhase("preparing");
+    // Unity's file progress can reach 1 before createUnityInstance resolves.
+    // Reserve 100% for the actual ready state; never advance on a timer.
+    const percent = Math.min(99, Math.floor(highest * 100));
+    byId("loading-percent").innerHTML = percent + "<span>%</span>";
+    byId("loading-fill").style.width = percent + "%";
+    progress.setAttribute("aria-valuenow", String(percent));
+  }
+  function fail(error) {
+    if (state !== "loading") return;
+    state = "failed"; document.body.dataset.raceState = state;
+    clearInterval(timer);
+    byId("loading-phase").textContent = "불러오기 실패";
+    byId("loading-title").textContent = "게임을 불러오지 못했어요";
+    byId("loading-status").textContent = "연결 상태를 확인하고 다시 시도해주세요.";
+    byId("loading-hint").textContent = "같은 문제가 계속되면 아래 오류 내용을 함께 알려주세요.";
+    byId("loading-actions").hidden = false;
+    byId("loading-details").hidden = false;
+    byId("loading-error").textContent = String(error?.message || error).slice(0, 4000);
+  }
+  function windowError(event) { if (state === "loading" && event.message) fail(event.message); }
+  window.addEventListener("error", windowError);
+  byId("loading-retry").addEventListener("click", () => {
+    const url = new URL(location.href); url.searchParams.set("retry", Date.now());
+    location.replace(url.href);
+  });
+
+  async function start() {
+    try {
+      const build = JSON.parse(byId("race-build-config").textContent);
+      const config = { ...build.config, fullscreenElementID: "unity-fullscreen-container",
+        cacheControl(url) {
+          // Only immutable, content-versioned Unity payloads. Connection settings must stay fresh.
+          const candidate = new URL(url, location.href);
+          const payloads = [build.config.dataUrl, build.config.codeUrl].map(value => new URL(value, location.href).href);
+          return payloads.includes(candidate.href) && /^[a-f0-9]{16}$/.test(candidate.searchParams.get("v") || "")
+            ? "immutable" : "no-store";
+        },
+        showBanner(message, type) {
+          if (type === "error") fail(message);
+          else if (state === "loading") {
+            byId("loading-warning").textContent = String(message);
+            byId("loading-warning").hidden = false;
+          }
+        },
+        errorHandler(message) {
+          if (state !== "loading") return false;
+          fail(message); return true;
+        }
+      };
+      await new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = build.loaderUrl; script.async = true;
+        script.onload = resolve;
+        script.onerror = () => reject(new Error("게임 로더 다운로드에 실패했습니다."));
+        document.body.appendChild(script);
+      });
+      if (state !== "loading") return;
+      if (typeof createUnityInstance !== "function") throw new Error("게임 로더를 실행할 수 없습니다.");
+      setPhase("files");
+      // Let the initial overlay paint before Unity begins expensive initialization.
+      await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+      await createUnityInstance(byId("unity-canvas"), config, onProgress);
+      if (state !== "loading") return;
+      state = "ready"; clearInterval(timer);
+      window.removeEventListener("error", windowError);
+      byId("loading-fill").style.width = "100%";
+      byId("loading-percent").innerHTML = "100<span>%</span>";
+      progress.setAttribute("aria-valuenow", "100");
+      byId("loading-status").textContent = "준비 완료!";
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        overlay.hidden = true;
+        document.body.dataset.raceState = "ready";
+      }));
+    } catch (error) { fail(error); }
+  }
+  start();
+})();
+</script>
+</body>
+</html>
