@@ -211,7 +211,7 @@ const CURRICULUM = {
       outcome: "품질 문제를 구체적인 조건과 측정 가능한 기준으로 설명할 수 있습니다."
     },
     {
-      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 8, col: 2, prerequisites: ["09", "12"], routes: { "12": "bottom-outer-right" },
+      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 8, col: 3, prerequisites: ["09", "12"], splitTop: true, routes: { "12": "bottom-right-clear" },
       description: "유명한 기술인지보다 현재 문제를 해결하고 이후 관리할 수 있는지를 기준으로 비교합니다.",
       topics: ["직접 구현과 도구 도입", "현재 작업량·변경 비용·운영 비용", "버전·호환성·유지보수", "코드와 자원의 라이선스", "작은 검증과 재검토 조건"],
       concepts: [
@@ -226,7 +226,7 @@ const CURRICULUM = {
       outcome: "선택 이유와 대안을 비교하고 어떤 조건에서 결정을 다시 검토할지 기록할 수 있습니다."
     },
     {
-      id: "15", title: "게시와 지속적인 관리", subtitle: "다른 사람이 쓰는 게임으로", stage: 4, row: 9, col: 1.5, prerequisites: ["11", "14"], splitTop: true,
+      id: "15", title: "게시와 지속적인 관리", subtitle: "다른 사람이 쓰는 게임으로", stage: 4, row: 9, col: 2, prerequisites: ["11", "14"], splitTop: true,
       description: "게시된 게임의 버전과 접근 범위를 확인하고 업데이트 후 문제가 생겼을 때의 대응을 준비합니다.",
       topics: ["개발 중 버전과 공개 버전", "소스·빌드·배포 결과의 관계", "경로·실행 환경·공개 범위", "비밀키·개인정보·서버의 역할", "복구·데이터 보존·인수인계 기록"],
       concepts: [

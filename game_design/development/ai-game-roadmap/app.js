@@ -102,8 +102,8 @@
           pathData = `M ${source.left - root.left} ${sy} H ${x} V ${ty} H ${target.left - root.left - 2}`;
         } else {
           const sourceLesson = byId.get(id);
-          // An outside-right route uses the rightmost exit, regardless of its destination column.
-          const exitOrder = item => item.routes?.[id] === "bottom-outer-right" ? Infinity : item.col;
+          // A route passing to the right of intervening cards uses the rightmost bottom exit.
+          const exitOrder = item => item.routes?.[id] === "bottom-right-clear" ? Infinity : item.col;
           const bottomTargets = coreLessons.filter(item => item.prerequisites.includes(id)).sort((a, b) => exitOrder(a) - exitOrder(b));
           const exitFraction = sourceLesson.splitBottom ? (bottomTargets.indexOf(lesson) + 1) / (bottomTargets.length + 1) : 0.5;
           const sx = source.left - root.left + source.width * exitFraction;
@@ -114,7 +114,10 @@
           const tx = target.left - root.left + target.width / 2 + entryOffset;
           const ty = target.top - root.top - 3;
           const sameColumnClear = sourceLesson.col === lesson.col && !coreLessons.some(item => item.col === lesson.col && item.row > sourceLesson.row && item.row < lesson.row);
-          if (lesson.routes?.[id] === "bottom-outer-right" || (lesson.row - sourceLesson.row > 1 && !sameColumnClear)) {
+          if (lesson.routes?.[id] === "bottom-right-clear") {
+            // The bottom exit already clears the intervening card; descend before turning left.
+            pathData = `M ${sx} ${sy} V ${ty - 21} H ${tx} V ${ty}`;
+          } else if (lesson.row - sourceLesson.row > 1 && !sameColumnClear) {
             // Long dependencies go outside the cards, so a hidden line cannot imply a wrong prerequisite.
             const lane = sourceLesson.col === 1 ? -12 - index * 5 : root.width + 12 + index * 5;
             pathData = `M ${sx} ${sy} V ${sy + 20} H ${lane} V ${ty - 21} H ${tx} V ${ty}`;
