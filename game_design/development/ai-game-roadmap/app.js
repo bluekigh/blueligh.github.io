@@ -100,10 +100,28 @@
           const sy = source.bottom - root.top - 20;
           const ty = target.top - root.top + 25 + index * 7;
           pathData = `M ${source.left - root.left} ${sy} H ${x} V ${ty} H ${target.left - root.left - 2}`;
+        } else if (lesson.routes?.[id] === "right-left") {
+          // Keep the prerequisite from the left separate from the vertical prerequisite above.
+          const sx = source.right - root.left;
+          const sy = source.top - root.top + source.height / 2;
+          const tx = target.left - root.left - 3;
+          const ty = target.top - root.top + target.height / 2;
+          const lane = target.left - root.left - 12;
+          pathData = `M ${sx} ${sy} H ${lane} V ${ty} H ${tx}`;
+        } else if (lesson.routes?.[id] === "outer-right") {
+          // This branch leaves and enters at the sides, without sharing the downward trunk.
+          const sx = source.right - root.left;
+          const sy = source.top - root.top + source.height / 2;
+          const tx = target.right - root.left + 3;
+          const ty = target.top - root.top + target.height / 2;
+          const lane = root.width + 12;
+          pathData = `M ${sx} ${sy} H ${lane} V ${ty} H ${tx}`;
         } else {
           const sx = source.left - root.left + source.width / 2;
           const sy = source.bottom - root.top;
-          const tx = target.left - root.left + target.width / 2 + (lesson.prerequisites.length > 1 ? (index ? 12 : -12) : 0);
+          const topEntries = lesson.prerequisites.filter(prerequisite => !lesson.routes?.[prerequisite]);
+          const topIndex = topEntries.indexOf(id);
+          const tx = target.left - root.left + target.width / 2 + (topEntries.length > 1 ? (topIndex ? 12 : -12) : 0);
           const ty = target.top - root.top - 3;
           const sourceLesson = byId.get(id);
           const sameColumnClear = sourceLesson.col === lesson.col && !coreLessons.some(item => item.col === lesson.col && item.row > sourceLesson.row && item.row < lesson.row);

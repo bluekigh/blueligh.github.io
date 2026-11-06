@@ -196,7 +196,7 @@ const CURRICULUM = {
       outcome: "재현 가능한 오류 보고와 확인 항목을 만들고 검사의 범위를 판단할 수 있습니다."
     },
     {
-      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 7, col: 3, prerequisites: ["12", "08"],
+      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 7, col: 4, prerequisites: ["12", "08"], routes: { "08": "right-left" },
       description: "‘최적화’라는 말 대신 어떤 기기와 상황에서 어떤 불편이 생기는지 정의합니다.",
       topics: ["반응 속도·프레임·로딩·메모리", "CPU·GPU·메모리·네트워크의 역할", "대상 기기와 화면 크기", "측정에 근거한 개선", "글자 크기·입력·접근성"],
       concepts: [
@@ -211,7 +211,7 @@ const CURRICULUM = {
       outcome: "품질 문제를 구체적인 조건과 측정 가능한 기준으로 설명할 수 있습니다."
     },
     {
-      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 8, col: 2, prerequisites: ["09", "12"],
+      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 8, col: 2, prerequisites: ["09", "12"], routes: { "12": "outer-right" },
       description: "유명한 기술인지보다 현재 문제를 해결하고 이후 관리할 수 있는지를 기준으로 비교합니다.",
       topics: ["직접 구현과 도구 도입", "현재 작업량·변경 비용·운영 비용", "버전·호환성·유지보수", "코드와 자원의 라이선스", "작은 검증과 재검토 조건"],
       concepts: [
