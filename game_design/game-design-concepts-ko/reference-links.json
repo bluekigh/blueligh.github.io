@@ -1,0 +1,1227 @@
+{
+  "checked": "2026-11-06",
+  "method": "HTTP HEAD only; status does not establish rights or verify destination content",
+  "links": [
+    {
+      "source_url": "http://gamedesignconcepts.pbworks.com",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "http://gamedesignconcepts.pbworks.com"
+      ],
+      "http_status": 200,
+      "final_url": "http://gamedesignconcepts.pbworks.com/w/page/11829050/FrontPage",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://gamedesignconcepts.aceboard.com",
+      "lessons": [
+        1,
+        9
+      ],
+      "labels": [
+        "http://gamedesignconcepts.aceboard.com",
+        "forum"
+      ],
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://twitter.com/#search?q=%23GDCU",
+      "lessons": [
+        1,
+        2
+      ],
+      "labels": [
+        "#GDCU",
+        "Twitter feed"
+      ],
+      "http_status": 200,
+      "final_url": "https://twitter.com/#search?q=%23GDCU",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Tic_Tac_Toe",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "Tic-Tac-Toe"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Tic_Tac_Toe",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Katamari_Damacy",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "Katamari Damacy"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Katamari_Damacy",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://bbrathwaite.wordpress.com/2008/07/09/the-easiest-game-design-exercise-ever-really/",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "Brenda Brathwaite"
+      ],
+      "http_status": 200,
+      "final_url": "https://bbrathwaite.wordpress.com/2008/07/09/the-easiest-game-design-exercise-ever-really/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://bbrathwaite.wordpress.com/2008/07/07/fear-of-the-game/",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "invisible barrier"
+      ],
+      "http_status": 200,
+      "final_url": "https://bbrathwaite.wordpress.com/2008/07/07/fear-of-the-game/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.costik.com/nowords.html",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "I Have No Words and I Must Design"
+      ],
+      "http_status": 404,
+      "final_url": "http://www.costik.com/nowords.html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.costik.com/nowords2002.pdf",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "here"
+      ],
+      "http_status": 200,
+      "final_url": "http://www.costik.com/nowords2002.pdf",
+      "content_type": "application/pdf",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.kongregate.com/games/pixelate/understanding-games-episode-1",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "Understanding Games 1"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.kongregate.com/en/games/pixelate/understanding-games-episode-1",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.kongregate.com/games/pixelate/understanding-games-episode-2",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "Understanding Games 2"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.kongregate.com/en/games/pixelate/understanding-games-episode-2",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.kongregate.com/games/pixelate/understanding-games-episode-3",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "Understanding Games 3"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.kongregate.com/en/games/pixelate/understanding-games-episode-3",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.kongregate.com/games/pixelate/understanding-games-episode-4",
+      "lessons": [
+        1
+      ],
+      "labels": [
+        "Understanding Games 4"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.kongregate.com/en/games/pixelate/understanding-games-episode-4",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://gamedesignconcepts.pbworks.com/",
+      "lessons": [
+        2,
+        3,
+        13
+      ],
+      "labels": [
+        "wiki",
+        "course wiki"
+      ],
+      "http_status": 200,
+      "final_url": "http://gamedesignconcepts.pbworks.com/w/page/11829050/FrontPage",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://gamedesignconcepts.aceboard.com/",
+      "lessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        15
+      ],
+      "labels": [
+        "discussion forums",
+        "forums",
+        "on the Forums",
+        "relevant forum",
+        "forum"
+      ],
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Scientific_method",
+      "lessons": [
+        2
+      ],
+      "labels": [
+        "Scientific Method"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Scientific_method",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.gamasutra.com/features/19990716/design_tools_01.htm",
+      "lessons": [
+        2
+      ],
+      "labels": [
+        "Formal Abstract Design Tools"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.gamedeveloper.com/keyword/features",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "verified_current_publisher_url": "https://www.gamedeveloper.com/design/formal-abstract-design-tools",
+      "editorial_note": "Same title and author verified on publisher website; use this current link without copying its content."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/waterfall.jpg?w=450&h=292",
+      "lessons": [
+        2
+      ],
+      "labels": [
+        "Waterfall"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/waterfall.jpg?w=450&h=292",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/iterative.jpg?w=450",
+      "lessons": [
+        2
+      ],
+      "labels": [
+        "Iterative"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/iterative.jpg?w=450",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/iterativerapidprototyping1.jpg?w=450&h=293",
+      "lessons": [
+        2
+      ],
+      "labels": [
+        "IterativeRapidPrototyping"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/iterativerapidprototyping1.jpg?w=450&h=293",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/06/29/level-1-overview-what-is-a-game/",
+      "lessons": [
+        3
+      ],
+      "labels": [
+        "first day"
+      ],
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/2009/06/29/level-1-overview-what-is-a-game/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://gamedesignconcepts.pbworks.com/Legal-Issues-for-Game-Developers",
+      "lessons": [
+        3
+      ],
+      "labels": [
+        "written an article that details the basics of IP (intellectual property) law as it pertains to games"
+      ],
+      "http_status": 200,
+      "final_url": "http://gamedesignconcepts.pbworks.com/w/page/11829076/Legal%20Issues%20for%20Game%20Developers",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/skiingsymbols.gif?w=450",
+      "lessons": [
+        3
+      ],
+      "labels": [
+        "SkiingSymbols"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/skiingsymbols.gif?w=450",
+      "content_type": "image/gif",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/greencircle.gif?w=450",
+      "lessons": [
+        3,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "labels": [
+        "GreenCircle"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/greencircle.gif?w=450",
+      "content_type": "image/gif",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/bluesquare.gif?w=450",
+      "lessons": [
+        3,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "labels": [
+        "BlueSquare"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/bluesquare.gif?w=450",
+      "content_type": "image/gif",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/blackdiamond.gif?w=450",
+      "lessons": [
+        3,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "labels": [
+        "BlackDiamond"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/blackdiamond.gif?w=450",
+      "content_type": "image/gif",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Street_Fighter_2",
+      "lessons": [
+        4
+      ],
+      "labels": [
+        "Street Fighter"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Street_Fighter_2",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Brawl_(game)",
+      "lessons": [
+        4
+      ],
+      "labels": [
+        "Brawl"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Brawl_(game)",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.craftparts.com/",
+      "lessons": [
+        4
+      ],
+      "labels": [
+        "Craftparts"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.craftparts.com/",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.costik.com/vidiot.html",
+      "lessons": [
+        4
+      ],
+      "labels": [
+        "Don’t Be a Vidiot"
+      ],
+      "http_status": 200,
+      "final_url": "http://www.costik.com/vidiot.html",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.boardgamegeek.com/",
+      "lessons": [
+        4
+      ],
+      "labels": [
+        "BoardGameGeek"
+      ],
+      "http_status": 403,
+      "final_url": "https://boardgamegeek.com/",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.raphkoster.com/2005/11/01/how-to-prototype-a-game-in-under-7-days/",
+      "lessons": [
+        4
+      ],
+      "labels": [
+        "list of game bits"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.raphkoster.com/2005/11/01/how-to-prototype-a-game-in-under-7-days/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.gamasutra.com/features/20060508/henderson_01.shtml",
+      "lessons": [
+        4
+      ],
+      "labels": [
+        "article on paper prototyping"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.gamedeveloper.com/keyword/features",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "verified_current_publisher_url": "https://www.gamedeveloper.com/business/the-paper-chase-saving-money-via-paper-prototyping",
+      "editorial_note": "Same title and author verified on publisher website; use this current link without copying its content."
+    },
+    {
+      "source_url": "http://www.cs.northwestern.edu/~hunicke/MDA.pdf",
+      "lessons": [
+        5,
+        8
+      ],
+      "labels": [
+        "MDA Framework"
+      ],
+      "http_status": 200,
+      "final_url": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf",
+      "content_type": "application/pdf",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life",
+      "lessons": [
+        5
+      ],
+      "labels": [
+        "Conway’s Game of Life"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.red3d.com/cwr/boids/",
+      "lessons": [
+        5
+      ],
+      "labels": [
+        "Boid’s Algorithm"
+      ],
+      "http_status": 200,
+      "final_url": "http://www.red3d.com/cwr/boids/",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://clicknothing.typepad.com/Design/hockingc_GDC06_Intentionality.zip",
+      "lessons": [
+        5
+      ],
+      "labels": [
+        "Designing to Promote Intentional Play"
+      ],
+      "http_status": 403,
+      "final_url": "https://www.networksolutions.com/typepad?siteID=100&channelID=P99C100S653N0B5A1D0E0000V111",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_link_action": "disabled: destination no longer verified as the original resource; historical URL shown as text"
+    },
+    {
+      "source_url": "http://gamedesignconcepts.pbworks.com/L5-Homeplay",
+      "lessons": [
+        5
+      ],
+      "labels": [
+        "I have created a new page on the course Wiki"
+      ],
+      "http_status": 200,
+      "final_url": "http://gamedesignconcepts.pbworks.com/w/page/11829075/L5%20Homeplay",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://hcsoftware.sourceforge.net/passage/",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "Passage"
+      ],
+      "http_status": 200,
+      "final_url": "https://hcsoftware.sourceforge.net/passage/",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://hcsoftware.sourceforge.net/gravitation/",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "Gravitation"
+      ],
+      "http_status": 200,
+      "final_url": "https://hcsoftware.sourceforge.net/gravitation/",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://rodvik.com/rodgames/marriage.html",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "The Marriage"
+      ],
+      "http_status": 200,
+      "final_url": "https://rodvik.com/rodgames/marriage.html",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.rodvik.com/rodgames/SOHMB.html",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "Stars Over Half-Moon Bay"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.rodvik.com/rodgames/SOHMB.html",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.newsgaming.com/games/index12.htm",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "September 12"
+      ],
+      "http_status": 200,
+      "final_url": "http://www.newsgaming.com/games/index12.htm",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://amanita-design.net/samorost-1/",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "Samorost"
+      ],
+      "http_status": 200,
+      "final_url": "https://amanita-design.net/games/samorost-1.html",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.jenovachen.com/flowingames/cloud.htm",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "Cloud"
+      ],
+      "http_status": 200,
+      "final_url": "http://www.jenovachen.com/flowingames/cloud.htm",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.centralconnector.com/GAMES/RISK.htm",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "original rules"
+      ],
+      "http_status": 200,
+      "final_url": "https://sawsells.com/domain/hoax.com",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_link_action": "disabled: destination no longer verified as the original resource; historical URL shown as text"
+    },
+    {
+      "source_url": "http://gamedesignconcepts.pbworks.com/Art-Games",
+      "lessons": [
+        6
+      ],
+      "labels": [
+        "Art Game"
+      ],
+      "http_status": 200,
+      "final_url": "http://gamedesignconcepts.pbworks.com/w/page/11829006/Art%20Games",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://lostgarden.com/Mixing_Games_and_Applications.pdf",
+      "lessons": [
+        7
+      ],
+      "labels": [
+        "Building a Princess Saving App"
+      ],
+      "http_status": 404,
+      "final_url": "https://lostgarden.com/Mixing_Games_and_Applications.pdf",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.jenovachen.com/flowingames/implementations/flowing/core.html",
+      "lessons": [
+        7
+      ],
+      "labels": [
+        "flOw"
+      ],
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/16/level-6-games-and-art/",
+      "lessons": [
+        7
+      ],
+      "labels": [
+        "Level 6"
+      ],
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/2009/07/16/level-6-games-and-art/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/czikszentmihalyi.jpg?w=450&h=439",
+      "lessons": [
+        7
+      ],
+      "labels": [
+        "Czikszentmihalyi"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/czikszentmihalyi.jpg?w=450&h=439",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.protospiel.org/",
+      "lessons": [
+        8,
+        13
+      ],
+      "labels": [
+        "Protospiel"
+      ],
+      "http_status": 200,
+      "final_url": "http://www.protospiel.org/",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.gamasutra.com/features/20041110/falstein_01.shtml",
+      "lessons": [
+        8
+      ],
+      "labels": [
+        "Natural Funativity"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.gamedeveloper.com/keyword/features",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "verified_current_publisher_url": "https://www.gamedeveloper.com/design/natural-funativity",
+      "editorial_note": "Same title and author verified on publisher website; use this current link without copying its content."
+    },
+    {
+      "source_url": "http://www.mud.co.uk/richard/hcds.htm",
+      "lessons": [
+        8
+      ],
+      "labels": [
+        "Clubs, Diamonds, Hearts, Spades: Players Who Suit MUDs"
+      ],
+      "http_status": 200,
+      "final_url": "https://mud.co.uk/richard/hcds.htm",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://xeodesign.com/whyweplaygames.html",
+      "lessons": [
+        8
+      ],
+      "labels": [
+        "four fun keys"
+      ],
+      "http_status": 200,
+      "final_url": "http://www.xeodesign.com/category/the-4-keys/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.gamasutra.com/features/20011012/garneau_01.htm",
+      "lessons": [
+        8
+      ],
+      "labels": [
+        "fourteen forms of fun"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.gamedeveloper.com/keyword/features",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "verified_current_publisher_url": "https://www.gamedeveloper.com/design/fourteen-forms-of-fun",
+      "editorial_note": "Same title and author verified on publisher website; use this current link without copying its content."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Myers-Briggs_Type_Indicator",
+      "lessons": [
+        8
+      ],
+      "labels": [
+        "Myers-Briggs"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Myers-Briggs_Type_Indicator",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.gamasutra.com/features/20050617/bates_01.shtml",
+      "lessons": [
+        9
+      ],
+      "labels": [
+        "Into the Woods: a Practical Guide to the Hero’s Journey"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.gamedeveloper.com/",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "verified_current_publisher_url": "https://www.gamedeveloper.com/design/into-the-woods-a-practical-guide-to-the-hero-s-journey",
+      "editorial_note": "Same title and author verified on publisher website; use this current link without copying its content."
+    },
+    {
+      "source_url": "http://www.gamasutra.com/features/20050727/sutherland_01.shtml",
+      "lessons": [
+        9
+      ],
+      "labels": [
+        "What Every Game Developer Needs to Know about Story"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.gamedeveloper.com/keyword/features",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "verified_current_publisher_url": "https://www.gamedeveloper.com/design/what-every-game-developer-needs-to-know-about-story",
+      "editorial_note": "Same title and author verified on publisher website; use this current link without copying its content."
+    },
+    {
+      "source_url": "http://www.amazon.com/gp/product/0140446362?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0140446362",
+      "lessons": [
+        9
+      ],
+      "labels": [
+        "Aristotle"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.amazon.com/gp/product/0140446362?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0140446362",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.amazon.com/gp/product/1577315936?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1577315936",
+      "lessons": [
+        9
+      ],
+      "labels": [
+        "Campbell"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.amazon.com/gp/product/1577315936?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1577315936",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.amazon.com/gp/product/0060391685?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0060391685",
+      "lessons": [
+        9
+      ],
+      "labels": [
+        "McKee"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.amazon.com/gp/product/0060391685?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0060391685",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Pente",
+      "lessons": [
+        9
+      ],
+      "labels": [
+        "Pente"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Pente",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://boardgamegeek.com/boardgame/39339",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "modern"
+      ],
+      "http_status": 403,
+      "final_url": "https://boardgamegeek.com/boardgame/39339",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.boardgamegeek.com/game/10547",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "board"
+      ],
+      "http_status": 403,
+      "final_url": "https://boardgamegeek.com/game/10547",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.boardgamegeek.com/game/15987",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "games"
+      ],
+      "http_status": 403,
+      "final_url": "https://boardgamegeek.com/game/15987",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.siggraph.org/s2009/",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "SIGGRAPH"
+      ],
+      "http_status": 307,
+      "final_url": "http://www.siggraph.org/s2009/",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.theinspiracy.com/ArPOV.htm",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "A Point of View"
+      ],
+      "http_status": 404,
+      "final_url": "http://www.theinspiracy.com/ArPOV.htm",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://onlyagame.typepad.com/only_a_game/2005/08/diversity_in_ga.html",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "Diversity in Game Narrative"
+      ],
+      "http_status": 403,
+      "final_url": "https://www.networksolutions.com/typepad?siteID=100&channelID=P99C100S653N0B5A1D0E0000V111",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_link_action": "disabled: destination no longer verified as the original resource; historical URL shown as text"
+    },
+    {
+      "source_url": "http://www.interactivestory.net/",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "Façade"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.interactivestory.net/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_link_action": "disabled: destination no longer verified as the original resource; historical URL shown as text"
+    },
+    {
+      "source_url": "http://en.wikipedia.org/wiki/Dramatic_structure",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "You might have seen this before"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/Dramatic_structure",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storylinear.jpg?w=450&h=43",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "StoryLinear"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storylinear.jpg?w=450&h=43",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storybranching.jpg?w=450",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "StoryBranching"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storybranching.jpg?w=450",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storyparallel.jpg?w=450&h=91",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "StoryParallel"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storyparallel.jpg?w=450&h=91",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storythreaded.jpg?w=450&h=178",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "StoryThreaded"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storythreaded.jpg?w=450&h=178",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storydynamic.jpg?w=450&h=311",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "StoryDynamic"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/storydynamic.jpg?w=450&h=311",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/snidelywhiplash.png?w=450",
+      "lessons": [
+        10
+      ],
+      "labels": [
+        "SnidelyWhiplash"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/07/snidelywhiplash.png?w=450",
+      "content_type": "image/png",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/09/level-4-the-early-stages-of-the-design-process/",
+      "lessons": [
+        12
+      ],
+      "labels": [
+        "section of Level 4 on prototyping"
+      ],
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/2009/07/09/level-4-the-early-stages-of-the-design-process/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://theclosetentrepreneur.com/giving-criticism-the-good-the-bad-and-the-ugly",
+      "lessons": [
+        13
+      ],
+      "labels": [
+        "Giving Criticism – the good, the bad, and the ugly!"
+      ],
+      "http_status": 200,
+      "final_url": "http://theclosetentrepreneur.com/giving-criticism-the-good-the-bad-and-the-ugly",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://images.google.com/",
+      "lessons": [
+        14
+      ],
+      "labels": [
+        "Google image search"
+      ],
+      "http_status": 200,
+      "final_url": "http://images.google.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.youtube.com/watch?v=cdTVcFo2EQw",
+      "lessons": [
+        17
+      ],
+      "labels": [
+        "Cooperation      and Engagement"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=cdTVcFo2EQw",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/08/magiccards.jpg?w=450&h=210",
+      "lessons": [
+        17
+      ],
+      "labels": [
+        "MagicCards"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/08/magiccards.jpg?w=450&h=210",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/08/woodpawns.jpg?w=450&h=120",
+      "lessons": [
+        17
+      ],
+      "labels": [
+        "WoodPawns"
+      ],
+      "type": "image",
+      "http_status": 200,
+      "final_url": "https://gamedesignconcepts.wordpress.com/wp-content/uploads/2009/08/woodpawns.jpg?w=450&h=120",
+      "content_type": "image/jpeg",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.boardgamegeek.com/boardgame/257",
+      "lessons": [
+        18
+      ],
+      "labels": [
+        "Kill Doctor Lucky"
+      ],
+      "http_status": 403,
+      "final_url": "https://boardgamegeek.com/boardgame/257",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.kingdomofloathing.com/",
+      "lessons": [
+        18
+      ],
+      "labels": [
+        "Kingdom of Loathing"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.kingdomofloathing.com/login.php?loginid=0f9019664a814bfcadd9d39344aa07b6",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://playthisthing.com/game-criticism-why-we-need-it-and-why-reviews-arent-it",
+      "lessons": [
+        19
+      ],
+      "labels": [
+        "Game      Criticism, Why We Need It, and Why Reviews Aren’t It"
+      ],
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://gamedesignconcepts.pbworks.com/next-steps",
+      "lessons": [
+        20
+      ],
+      "labels": [
+        "page on the course wiki"
+      ],
+      "http_status": 200,
+      "final_url": "http://gamedesignconcepts.pbworks.com/w/page/11829111/next%20steps",
+      "content_type": "text/html; charset=utf-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://gamebalanceconcepts.wordpress.com",
+      "lessons": [
+        20
+      ],
+      "labels": [
+        "gamebalanceconcepts.wordpress.com"
+      ],
+      "http_status": 200,
+      "final_url": "https://gamebalanceconcepts.wordpress.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://www.amazon.com/gp/product/158450580X?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=158450580X",
+      "lessons": [
+        20
+      ],
+      "labels": [
+        "Amazon"
+      ],
+      "http_status": 200,
+      "final_url": "https://www.amazon.com/gp/product/158450580X?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=158450580X",
+      "content_type": "text/html",
+      "rights": "No independent reuse permission established; link only, not copied."
+    },
+    {
+      "source_url": "http://survey.constantcontact.com/survey/a07e2kh03mmfz3laohv/start",
+      "lessons": [
+        20
+      ],
+      "labels": [
+        "http://survey.constantcontact.com/survey/a07e2kh03mmfz3laohv/start"
+      ],
+      "http_status": 403,
+      "final_url": "https://www.constantcontact.com/",
+      "rights": "No independent reuse permission established; link only, not copied."
+    }
+  ],
+  "editorial_note": "HTTP status alone is not proof of matching content or reuse permission. Original URLs remain as historical references. Selected changed destinations are disabled and explained in HTML."
+}

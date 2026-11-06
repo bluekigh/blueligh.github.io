@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "complete": false,
+  "complete": true,
   "lessons": [
     {
       "level": 1,
@@ -75,9 +75,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "e1b923c9f2598519d1d1b3fd1e3d5f4949840e6f7b0d96ca3e855288f2e27a12",
       "source_blocks": 92,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 92,
+      "translation_file": "level-06.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -88,9 +88,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "5ed360ce1f6312efbf76d3e84662131407cfa5db412ffb8b6f0e1ce9d0da45e6",
       "source_blocks": 92,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 92,
+      "translation_file": "level-07.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -101,9 +101,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "d1fce7d145849a9544c935b2ab7092af02bbc4f1d0927c60932ff373cdedfef5",
       "source_blocks": 86,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 86,
+      "translation_file": "level-08.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -114,9 +114,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "0d40222866aad03489492999bfa3fe5c6fb9c1c5788bb598fc45b745b59914d2",
       "source_blocks": 92,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 92,
+      "translation_file": "level-09.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -127,9 +127,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "efc65f8f446c907ce130c48f5d3b87cf7759248009e239dd674d4f1deccf459e",
       "source_blocks": 95,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 95,
+      "translation_file": "level-10.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -140,9 +140,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "c81c87e4532ed79a24513fa936f0f827d5682dd3aabe9a560023e3bf64e3cf59",
       "source_blocks": 37,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 37,
+      "translation_file": "level-11.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -153,9 +153,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "7bfc428f2bef2aca072142a8963867e9ea0e36b7590e50cfdff2792d7f0eba19",
       "source_blocks": 63,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 63,
+      "translation_file": "level-12.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -166,9 +166,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "972afcac091608a4129e6d281d1feef4399672b1ff483e1ae4353ca72da01fb8",
       "source_blocks": 38,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 38,
+      "translation_file": "level-13.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -179,9 +179,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "3863d305eadbd546aaacecef833acf333ab320053a5ec6409acad2638407a155",
       "source_blocks": 36,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 36,
+      "translation_file": "level-14.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -192,9 +192,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "4843c32150c3121ea324d0c89c612579ae3e0ec2e53095ec20ab6451daf72d7a",
       "source_blocks": 36,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 36,
+      "translation_file": "level-15.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -205,9 +205,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "f5eab19de940b04bbdcf21f5443569dc1e8bfcae02ee9b89b70fdff234f043ff",
       "source_blocks": 79,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 79,
+      "translation_file": "level-16.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
@@ -218,9 +218,9 @@
       "source_retrieved": "2026-11-06",
       "source_html_sha256": "7b118748893f5434f57c109284bdefafb54ba7244ecc50586ff65c59e0284e9b",
       "source_blocks": 65,
-      "translated_blocks": 0,
-      "translation_file": null,
-      "status": "not_translated",
+      "translated_blocks": 65,
+      "translation_file": "level-17.html",
+      "status": "translated_with_disclosed_rights_substitutions",
       "independent_human_review": false
     },
     {
