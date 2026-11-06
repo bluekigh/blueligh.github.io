@@ -181,7 +181,7 @@ const CURRICULUM = {
       sources: [["GitHub Pages가 제공하는 기능", "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"]]
     },
     {
-      id: "12", title: "오류와 검증", subtitle: "정말 완성됐는지 확인하기", stage: 4, row: 6, col: 4, prerequisites: ["07"],
+      id: "12", title: "오류와 검증", subtitle: "정말 완성됐는지 확인하기", stage: 4, row: 6, col: 4, prerequisites: ["07"], splitBottom: true,
       description: "오류가 생긴 조건을 설명하고, 수정 후에는 관련된 기존 기능까지 확인합니다.",
       topics: ["기획·구현·설정 문제의 구분", "재현 순서·기대 결과·실제 결과", "오류 메시지와 로그", "경계값·반복 입력·실패 상황", "자동 검사와 직접 플레이의 범위"],
       concepts: [
@@ -196,7 +196,7 @@ const CURRICULUM = {
       outcome: "재현 가능한 오류 보고와 확인 항목을 만들고 검사의 범위를 판단할 수 있습니다."
     },
     {
-      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 7, col: 4, prerequisites: ["12", "08"],
+      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 7, col: 3.5, prerequisites: ["12", "08"],
       description: "‘최적화’라는 말 대신 어떤 기기와 상황에서 어떤 불편이 생기는지 정의합니다.",
       topics: ["반응 속도·프레임·로딩·메모리", "CPU·GPU·메모리·네트워크의 역할", "대상 기기와 화면 크기", "측정에 근거한 개선", "글자 크기·입력·접근성"],
       concepts: [
@@ -211,7 +211,7 @@ const CURRICULUM = {
       outcome: "품질 문제를 구체적인 조건과 측정 가능한 기준으로 설명할 수 있습니다."
     },
     {
-      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 8, col: 2, prerequisites: ["09", "12"], routes: { "12": "outer-right" },
+      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 8, col: 2, prerequisites: ["09", "12"], routes: { "12": "bottom-outer-right" },
       description: "유명한 기술인지보다 현재 문제를 해결하고 이후 관리할 수 있는지를 기준으로 비교합니다.",
       topics: ["직접 구현과 도구 도입", "현재 작업량·변경 비용·운영 비용", "버전·호환성·유지보수", "코드와 자원의 라이선스", "작은 검증과 재검토 조건"],
       concepts: [
@@ -226,7 +226,7 @@ const CURRICULUM = {
       outcome: "선택 이유와 대안을 비교하고 어떤 조건에서 결정을 다시 검토할지 기록할 수 있습니다."
     },
     {
-      id: "15", title: "게시와 지속적인 관리", subtitle: "다른 사람이 쓰는 게임으로", stage: 4, row: 9, col: 2, prerequisites: ["11", "14"],
+      id: "15", title: "게시와 지속적인 관리", subtitle: "다른 사람이 쓰는 게임으로", stage: 4, row: 9, col: 1.5, prerequisites: ["11", "14"], splitTop: true,
       description: "게시된 게임의 버전과 접근 범위를 확인하고 업데이트 후 문제가 생겼을 때의 대응을 준비합니다.",
       topics: ["개발 중 버전과 공개 버전", "소스·빌드·배포 결과의 관계", "경로·실행 환경·공개 범위", "비밀키·개인정보·서버의 역할", "복구·데이터 보존·인수인계 기록"],
       concepts: [

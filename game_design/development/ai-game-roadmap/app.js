@@ -100,26 +100,21 @@
           const sy = source.bottom - root.top - 20;
           const ty = target.top - root.top + 25 + index * 7;
           pathData = `M ${source.left - root.left} ${sy} H ${x} V ${ty} H ${target.left - root.left - 2}`;
-        } else if (lesson.routes?.[id] === "outer-right") {
-          // This branch leaves and enters at the sides, without sharing the downward trunk.
-          const sx = source.right - root.left;
-          const sy = source.top - root.top + source.height / 2;
-          const tx = target.right - root.left + 3;
-          const ty = target.top - root.top + target.height / 2;
-          const lane = root.width + 12;
-          pathData = `M ${sx} ${sy} H ${lane} V ${ty} H ${tx}`;
         } else {
           const sourceLesson = byId.get(id);
-          const bottomTargets = coreLessons.filter(item => item.prerequisites.includes(id) && !item.routes?.[id]).sort((a, b) => a.col - b.col);
+          // An outside-right route uses the rightmost exit, regardless of its destination column.
+          const exitOrder = item => item.routes?.[id] === "bottom-outer-right" ? Infinity : item.col;
+          const bottomTargets = coreLessons.filter(item => item.prerequisites.includes(id)).sort((a, b) => exitOrder(a) - exitOrder(b));
           const exitFraction = sourceLesson.splitBottom ? (bottomTargets.indexOf(lesson) + 1) / (bottomTargets.length + 1) : 0.5;
           const sx = source.left - root.left + source.width * exitFraction;
           const sy = source.bottom - root.top;
-          const topEntries = lesson.prerequisites.filter(prerequisite => !lesson.routes?.[prerequisite]).sort((a, b) => byId.get(a).col - byId.get(b).col);
+          const topEntries = [...lesson.prerequisites].sort((a, b) => byId.get(a).col - byId.get(b).col);
           const topIndex = topEntries.indexOf(id);
-          const tx = target.left - root.left + target.width / 2 + (topEntries.length > 1 ? (topIndex ? 12 : -12) : 0);
+          const entryOffset = lesson.splitTop ? target.width * ((topIndex + 0.5) / topEntries.length - 0.5) : (topEntries.length > 1 ? (topIndex ? 12 : -12) : 0);
+          const tx = target.left - root.left + target.width / 2 + entryOffset;
           const ty = target.top - root.top - 3;
           const sameColumnClear = sourceLesson.col === lesson.col && !coreLessons.some(item => item.col === lesson.col && item.row > sourceLesson.row && item.row < lesson.row);
-          if (lesson.row - sourceLesson.row > 1 && !sameColumnClear) {
+          if (lesson.routes?.[id] === "bottom-outer-right" || (lesson.row - sourceLesson.row > 1 && !sameColumnClear)) {
             // Long dependencies go outside the cards, so a hidden line cannot imply a wrong prerequisite.
             const lane = sourceLesson.col === 1 ? -12 - index * 5 : root.width + 12 + index * 5;
             pathData = `M ${sx} ${sy} V ${sy + 20} H ${lane} V ${ty - 21} H ${tx} V ${ty}`;
