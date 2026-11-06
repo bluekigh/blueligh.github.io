@@ -830,7 +830,9 @@
       "http_status": 200,
       "final_url": "https://www.amazon.com/gp/product/0140446362?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0140446362",
       "content_type": "text/html",
-      "rights": "No independent reuse permission established; link only, not copied."
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_url": "https://www.amazon.com/dp/0140446362",
+      "editorial_note": "Original affiliate/tracking parameters retained only in this historical record; clickable published links use the same product ID without them. This does not verify availability or reuse rights."
     },
     {
       "source_url": "http://www.amazon.com/gp/product/1577315936?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1577315936",
@@ -843,7 +845,9 @@
       "http_status": 200,
       "final_url": "https://www.amazon.com/gp/product/1577315936?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1577315936",
       "content_type": "text/html",
-      "rights": "No independent reuse permission established; link only, not copied."
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_url": "https://www.amazon.com/dp/1577315936",
+      "editorial_note": "Original affiliate/tracking parameters retained only in this historical record; clickable published links use the same product ID without them. This does not verify availability or reuse rights."
     },
     {
       "source_url": "http://www.amazon.com/gp/product/0060391685?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0060391685",
@@ -856,7 +860,9 @@
       "http_status": 200,
       "final_url": "https://www.amazon.com/gp/product/0060391685?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0060391685",
       "content_type": "text/html",
-      "rights": "No independent reuse permission established; link only, not copied."
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_url": "https://www.amazon.com/dp/0060391685",
+      "editorial_note": "Original affiliate/tracking parameters retained only in this historical record; clickable published links use the same product ID without them. This does not verify availability or reuse rights."
     },
     {
       "source_url": "http://en.wikipedia.org/wiki/Pente",
@@ -1208,7 +1214,9 @@
       "http_status": 200,
       "final_url": "https://www.amazon.com/gp/product/158450580X?ie=UTF8&tag=gamedesiconc-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=158450580X",
       "content_type": "text/html",
-      "rights": "No independent reuse permission established; link only, not copied."
+      "rights": "No independent reuse permission established; link only, not copied.",
+      "published_url": "https://www.amazon.com/dp/158450580X",
+      "editorial_note": "Original affiliate/tracking parameters retained only in this historical record; clickable published links use the same product ID without them. This does not verify availability or reuse rights."
     },
     {
       "source_url": "http://survey.constantcontact.com/survey/a07e2kh03mmfz3laohv/start",

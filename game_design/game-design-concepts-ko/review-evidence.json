@@ -1,0 +1,1054 @@
+{
+  "review_date": "2026-11-06",
+  "baseline_commit": "c5607ccacaae6244cb778a1ffcccc2c5b78be629",
+  "method": "Three AI reviewers read and compared every assigned source block with the published article. Root integrated and checked findings and also read all 36 blocks of lesson 14. Structural matching is not proof of semantic perfection.",
+  "independent_human_review": false,
+  "coverage": [
+    {
+      "n": 1,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/06/29/level-1-overview-what-is-a-game/",
+      "reviewed_block_count": 58,
+      "reviewed_block_range": [
+        0,
+        57
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "2ff189e42b101954f6d8691aa62206705db403529a635788920124664c125658"
+    },
+    {
+      "n": 2,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+      "reviewed_block_count": 49,
+      "reviewed_block_range": [
+        0,
+        48
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "9f0e5615df8d63e70366eb1e7724710144d8665ee36f9ea685a9e815f145505e"
+    },
+    {
+      "n": 3,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/06/level-3-formal-elements-of-games/",
+      "reviewed_block_count": 94,
+      "reviewed_block_range": [
+        0,
+        93
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "d25048583cc71016588a8f4965cc6d050b21d2a2a266b0e4dc326803208cf9ab"
+    },
+    {
+      "n": 4,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/09/level-4-the-early-stages-of-the-design-process/",
+      "reviewed_block_count": 91,
+      "reviewed_block_range": [
+        0,
+        90
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "75133107e6d68f280792aedcb8f47c87467692e344f72a9f122bd6c54e8582ed"
+    },
+    {
+      "n": 5,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/13/level-5-mechanics-and-dynamics/",
+      "reviewed_block_count": 96,
+      "reviewed_block_range": [
+        0,
+        95
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "14231047d20dc9142d6983a134ca959f4eb3e28e71eb9e1156b53c5549ee6e77"
+    },
+    {
+      "n": 6,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/16/level-6-games-and-art/",
+      "reviewed_block_count": 92,
+      "reviewed_block_range": [
+        0,
+        91
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "e1b923c9f2598519d1d1b3fd1e3d5f4949840e6f7b0d96ca3e855288f2e27a12"
+    },
+    {
+      "n": 7,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/20/level-7-decision-making-and-flow-theory/",
+      "reviewed_block_count": 92,
+      "reviewed_block_range": [
+        0,
+        91
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "5ed360ce1f6312efbf76d3e84662131407cfa5db412ffb8b6f0e1ce9d0da45e6"
+    },
+    {
+      "n": 8,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/23/level-8-kinds-of-fun-kinds-of-players/",
+      "reviewed_block_count": 86,
+      "reviewed_block_range": [
+        0,
+        85
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "d1fce7d145849a9544c935b2ab7092af02bbc4f1d0927c60932ff373cdedfef5"
+    },
+    {
+      "n": 9,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/27/level-9-stories-and-games/",
+      "reviewed_block_count": 92,
+      "reviewed_block_range": [
+        0,
+        91
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "0d40222866aad03489492999bfa3fe5c6fb9c1c5788bb598fc45b745b59914d2"
+    },
+    {
+      "n": 10,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/07/30/level-10-nonlinear-storytelling/",
+      "reviewed_block_count": 95,
+      "reviewed_block_range": [
+        0,
+        94
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "efc65f8f446c907ce130c48f5d3b87cf7759248009e239dd674d4f1deccf459e"
+    },
+    {
+      "n": 11,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/03/level-11-design-project-overview/",
+      "reviewed_block_count": 37,
+      "reviewed_block_range": [
+        0,
+        36
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "c81c87e4532ed79a24513fa936f0f827d5682dd3aabe9a560023e3bf64e3cf59"
+    },
+    {
+      "n": 12,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/06/level-12-solo-testing/",
+      "reviewed_block_count": 63,
+      "reviewed_block_range": [
+        0,
+        62
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "7bfc428f2bef2aca072142a8963867e9ea0e36b7590e50cfdff2792d7f0eba19"
+    },
+    {
+      "n": 13,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/10/level-13-playing-with-designers/",
+      "reviewed_block_count": 38,
+      "reviewed_block_range": [
+        0,
+        37
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "972afcac091608a4129e6d281d1feef4399672b1ff483e1ae4353ca72da01fb8"
+    },
+    {
+      "n": 14,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/13/level-14-playing-with-non-designers/",
+      "reviewed_block_count": 36,
+      "reviewed_block_range": [
+        0,
+        35
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "3863d305eadbd546aaacecef833acf333ab320053a5ec6409acad2638407a155"
+    },
+    {
+      "n": 15,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/17/level-15-blindtesting/",
+      "reviewed_block_count": 36,
+      "reviewed_block_range": [
+        0,
+        35
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "4843c32150c3121ea324d0c89c612579ae3e0ec2e53095ec20ab6451daf72d7a"
+    },
+    {
+      "n": 16,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/20/level-16-game-balance/",
+      "reviewed_block_count": 79,
+      "reviewed_block_range": [
+        0,
+        78
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "f5eab19de940b04bbdcf21f5443569dc1e8bfcae02ee9b89b70fdff234f043ff"
+    },
+    {
+      "n": 17,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/24/level-17-user-interfaces/",
+      "reviewed_block_count": 65,
+      "reviewed_block_range": [
+        0,
+        64
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "7b118748893f5434f57c109284bdefafb54ba7244ecc50586ff65c59e0284e9b"
+    },
+    {
+      "n": 18,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/27/level-18-the-final-iteration/",
+      "reviewed_block_count": 40,
+      "reviewed_block_range": [
+        0,
+        39
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "0282f3b183a9fe6552629741be6b6132fec25e942e91b0f33b11e0b969b6b2ea"
+    },
+    {
+      "n": 19,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/08/31/level-19-game-criticism-and-analysis/",
+      "reviewed_block_count": 27,
+      "reviewed_block_range": [
+        0,
+        26
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "670bae72e0aaa6b8a199166776844a597776ba8f1e3ffc55f107ca817078637e"
+    },
+    {
+      "n": 20,
+      "source_url": "https://gamedesignconcepts.wordpress.com/2009/09/03/level-20-course-summary-and-next-steps/",
+      "reviewed_block_count": 38,
+      "reviewed_block_range": [
+        0,
+        37
+      ],
+      "all_blocks_read_and_compared": true,
+      "source_html_sha256": "946f8268c1bdddbefa20b18e025b8c1c5a48bf7d222c7033ffcf5708a72b1073"
+    }
+  ],
+  "findings": [
+    {
+      "id": "R02-01",
+      "n": 2,
+      "blocks": [
+        19
+      ],
+      "title": "폭포수와 반복 개발의 역사적 대비",
+      "category": "원문 설명 범위·역사적 단순화",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "반복의 필요성을 설명하기 위한 단순한 대비로 읽으세요. Royce의 1970년 원 논문에도 단계 사이의 반복과 위험을 줄이는 재검토가 나옵니다. 모든 폭포수 방식에 되돌아가는 절차가 전혀 없다는 정확한 역사로 일반화하면 안 됩니다.",
+      "explanation": "",
+      "source_evidence": "Historically, the first design methodology was known as the waterfall method",
+      "reviewed_translation_excerpt": "역사적으로 초기 디자인 방법론은 ‘폭포수 방식’이라고 알려져 있습니다.",
+      "sources": [
+        {
+          "url": "https://cse.msu.edu/~cse435/Homework/HW3/royce1970.pdf",
+          "title": "Winston Royce의 1970년 원 논문"
+        }
+      ]
+    },
+    {
+      "id": "R03-01",
+      "n": 3,
+      "blocks": [
+        24
+      ],
+      "title": "체스·Stratego의 승리 조건",
+      "category": "원문 사실 오류",
+      "certainty": "확정",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "체스의 목표는 체크메이트이며 왕을 실제로 잡는 것은 허용되지 않습니다. 확인한 Royal Jumbo/PlayMonster 판본의 Stratego는 상대 깃발을 잡거나 상대가 다음 차례에 병력을 움직이지 못하게 하면 승리합니다. 두 게임 모두 상대의 모든 말을 없애야 이기는 게임으로 이해하면 안 됩니다.",
+      "explanation": "",
+      "source_evidence": "Eliminate all of your opponent’s pieces from the game. Chess and Stratego",
+      "reviewed_translation_excerpt": "상대의 모든 말을 게임에서 없앱니다. 체스와 《Stratego》는 승리를 위해 상대 전력을 제거하는 유명한 예입니다.",
+      "sources": [
+        {
+          "url": "https://handbook.fide.com/chapter/E012023",
+          "title": "FIDE 공식 체스 규칙"
+        },
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/07/StrategoOR-_Rules_2019.pdf",
+          "title": "Royal Jumbo/PlayMonster Stratego 규칙"
+        }
+      ]
+    },
+    {
+      "id": "R04-01",
+      "n": 4,
+      "blocks": [
+        43
+      ],
+      "title": "unpainted의 뜻",
+      "category": "번역 의미 오류",
+      "certainty": "확정",
+      "status": "이번에 번역 수정",
+      "translation_error": true,
+      "note": "unpainted는 도색 여부를 뜻합니다. 무채색은 흰색·검정·회색 등의 색채 구분이므로 같은 뜻이 아닙니다. 재료를 고르는 안내가 정확하도록 번역을 수정했습니다.",
+      "explanation": "",
+      "source_evidence": "unpainted and colored wooden cubes",
+      "reviewed_translation_excerpt": "무채색·유색 나무 큐브",
+      "sources": [],
+      "before": "무채색·유색 나무 큐브",
+      "after": "도색하지 않은 나무 큐브와 색칠한 나무 큐브"
+    },
+    {
+      "id": "R04-02",
+      "n": 4,
+      "blocks": [
+        56
+      ],
+      "title": "3인 이상 동시 사망 때 종료 조건",
+      "category": "원문 예시 규칙의 미정·충돌",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "이 프로토타입 예시는 미완성 규칙입니다. 3인 게임에서 A·B만 동시에 죽고 C가 살아 있으면 “한 명만 남으면 승리”와 “둘 이상이 서로 죽이면 무승부”를 함께 적용하기 어렵습니다. 원문도 다음 단락에서 미정 규칙을 찾아 보라고 합니다. 실습에서는 생존자 1명은 승리, 0명은 무승부, 2명 이상은 계속처럼 우선순위를 직접 정할 수 있습니다. 이 예시 해결안은 검토팀의 제안입니다.",
+      "explanation": "",
+      "source_evidence": "If two or more players shoot and kill each other on the same turn simultaneously, the game is a draw.",
+      "reviewed_translation_excerpt": "둘 이상이 같은 차례에 서로 동시에 쏘아 죽이면 무승부입니다.",
+      "sources": []
+    },
+    {
+      "id": "R04-03",
+      "n": 4,
+      "blocks": [
+        64
+      ],
+      "title": "육각 격자 거리와 경로 길이",
+      "category": "원문 설명 범위·수학 조건",
+      "certainty": "확정",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "여섯 방향의 이동 비용이 같다는 성질과 임의의 경로 길이는 다릅니다. 장애물·가중 이동 비용이 없는 격자에서 최단 거리가 3칸이면 여러 최단 경로도 3칸이지만, 우회하거나 되돌아가는 경로까지 모두 3칸인 것은 아닙니다. 이 조건은 영어 원문에도 빠져 있으므로 한국어 번역의 누락으로 분류하지 않았습니다.",
+      "explanation": "",
+      "source_evidence": "3 hexes away is always that many hexes, no matter which of several paths you take",
+      "reviewed_translation_excerpt": "여러 경로 중 어느 쪽으로 가도 세 칸 거리는 세 칸",
+      "sources": [
+        {
+          "url": "https://www.redblobgames.com/grids/hexagons/",
+          "title": "Amit Patel의 육각 격자 설명"
+        }
+      ]
+    },
+    {
+      "id": "R04-04",
+      "n": 4,
+      "blocks": [
+        18
+      ],
+      "title": "기존 작품 실습과 공개 배포",
+      "category": "권리 범위 학습 주의",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "기존 작품에서 아이디어를 얻어 실습하는 것과 그 작품의 그림·규칙 문장 등을 공개 배포하는 것은 구분해야 합니다. 이 강의의 CC 표시는 다른 권리자가 가진 자료의 이용허락을 대신하지 않습니다. 6강의 기존 게임 변형 과제에도 같은 주의가 적용됩니다. 미국 저작권청 안내는 게임의 아이디어·방법과 구체적 문장·그림의 차이를 설명하지만, 이를 모든 관할과 모든 이용 방식에 대한 합법 판정으로 일반화하지 않습니다.",
+      "explanation": "",
+      "source_evidence": "Start with materials from other sources, such as existing art",
+      "reviewed_translation_excerpt": "기존 그림이나 다른 프로젝트에 못 들어간 메커니즘을 활용하도록 게임을 만드세요.",
+      "sources": [
+        {
+          "url": "https://www.copyright.gov/register/tx-games.html",
+          "title": "미국 저작권청의 게임 저작권 안내"
+        },
+        {
+          "url": "https://wiki.creativecommons.org/wiki/Marking/Creators/Marking_third_party_content",
+          "title": "Creative Commons 제3자 자료 표시 안내"
+        }
+      ]
+    },
+    {
+      "id": "R05-01",
+      "n": 5,
+      "blocks": [
+        3
+      ],
+      "title": "7−X 비용을 반비례로 번역",
+      "category": "번역 의미 오류",
+      "certainty": "확정",
+      "status": "이번에 번역 수정",
+      "translation_error": true,
+      "note": "예시의 비용은 7−X입니다. 크기 X가 작을수록 복구에 드는 차례 수가 커진다는 뜻이며, 수학적 반비례 k/X를 뜻하지 않습니다. 원문의 inverse relationship이 가리키는 방향을 정확히 옮기도록 수정했습니다.",
+      "explanation": "",
+      "source_evidence": "inverse relationship between size and cost",
+      "reviewed_translation_excerpt": "크기와 비용이 반비례",
+      "sources": [],
+      "before": "크기와 비용이 반비례하도록 제안합니다.",
+      "after": "크기가 작을수록 복구 비용이 커지도록 제안합니다."
+    },
+    {
+      "id": "R05-02",
+      "n": 5,
+      "blocks": [
+        65
+      ],
+      "title": "Game of Life의 이웃 3개인 산 세포",
+      "category": "원문 규칙 누락",
+      "certainty": "확정",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "원문은 살아 있는 세포의 산 이웃이 3개일 때 생존한다는 경우를 명시하지 않았습니다. 구현할 때는 대각선을 포함한 8개 이웃을 세고, 산 세포는 산 이웃이 2~3개일 때 생존하며, 죽은 세포는 산 이웃이 정확히 3개일 때 태어나도록 하세요. 그 외의 경우는 죽은 상태가 됩니다. 모든 칸은 같은 이전 세대를 기준으로 함께 갱신합니다. 번역 누락이 아니라 원문 설명을 보완한 학습 주입니다.",
+      "explanation": "",
+      "source_evidence": "all dead cells adjacent to exactly three living cells are “born”",
+      "reviewed_translation_excerpt": "죽은 세포의 산 이웃이 정확히 3개면 태어나며, 산 이웃이 정확히 2개인 세포는 상태를 유지합니다.",
+      "sources": [
+        {
+          "url": "https://assets.press.princeton.edu/chapters/s9208.pdf",
+          "title": "Princeton University Press: 생명 게임 규칙"
+        }
+      ]
+    },
+    {
+      "id": "R06-01",
+      "n": 6,
+      "blocks": [
+        48
+      ],
+      "title": "사진 발명을 1890년대로 설명",
+      "category": "원문 사실 오류",
+      "certainty": "확정",
+      "status": "기존 주의 문구에 구체적인 확인 근거 추가",
+      "translation_error": false,
+      "note": "사진 발명을 1890년대로 두는 설명은 맞지 않습니다. 메트로폴리탄 미술관의 사진사 해설은 이미 1826년 Niépce의 성과와 1839년 다게레오타이프 발표·공개를 설명합니다. 본문에 있던 “검증된 연대가 아님”이라는 주의에서 더 나아가, 이 문서에서는 그 근거를 명시합니다.",
+      "explanation": "",
+      "source_evidence": "around the 1890s, the photographic camera was invented",
+      "reviewed_translation_excerpt": "1890년대 무렵 사진기가 발명되어 모든 것이 뒤집혔습니다.",
+      "sources": [
+        {
+          "url": "https://www.metmuseum.org/essays/daguerre-1787-1851-and-the-invention-of-photography",
+          "title": "메트로폴리탄 미술관: 사진의 발명"
+        }
+      ]
+    },
+    {
+      "id": "R06-02",
+      "n": 6,
+      "blocks": [
+        50
+      ],
+      "title": "추상미술의 상징·의미",
+      "category": "원문 이론·역사 설명 범위",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "외부 대상을 사실적으로 재현하지 않는 것과 의미·상징이 없는 것은 다릅니다. 칸딘스키의 추상에는 정신성과 내적 경험을 표현하려는 목표가 있었습니다. 이 단락을 추상미술 전체의 포괄적 정의로 읽지 마세요. 사진의 “100% 완벽한 재현”이나 옛 회화가 일괄적으로 쓸모없어졌다는 설명도 저자의 논증을 위한 단순화입니다.",
+      "explanation": "",
+      "source_evidence": "art that is not symbolic or representative of anything except itself",
+      "reviewed_translation_excerpt": "자기 외에는 아무것도 상징·재현하지 않는 오늘날의 추상미술",
+      "sources": [
+        {
+          "url": "https://www.guggenheim-bilbao.eus/en/exhibitions/kandinsky-in-context",
+          "title": "구겐하임: 칸딘스키의 추상과 정신성"
+        }
+      ]
+    },
+    {
+      "id": "R06-03",
+      "n": 6,
+      "blocks": [
+        52
+      ],
+      "title": "모던 아트의 기간",
+      "category": "원문 역사적 범위 단순화",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "1910~1950년은 이 강의가 제시한 대략적 구분이며 미술사 전체의 고정된 기준이 아닙니다. MoMA의 교육 자료는 모던 아트의 배경을 19세기의 변화까지 거슬러 설명합니다. 여기서는 다른 단일 연대를 새 정답으로 제시하지 않습니다.",
+      "explanation": "",
+      "source_evidence": "modern here refers to a specific time period in the general range of 1910 through 1950",
+      "reviewed_translation_excerpt": "모던은 대략 1910~1950년이라는 특정 시기",
+      "sources": [
+        {
+          "url": "https://www.moma.org/momaorg/shared/flattened_pages/moma_learning/themes/what-is-modern-art/",
+          "title": "MoMA: 모던 아트란 무엇인가"
+        }
+      ]
+    },
+    {
+      "id": "R06-04",
+      "n": 6,
+      "blocks": [
+        59
+      ],
+      "title": "figured out을 고민했다로 완화",
+      "category": "번역 주장 강도 변경",
+      "certainty": "확정",
+      "status": "이번에 번역 수정",
+      "translation_error": true,
+      "note": "원문은 이미 방법을 알아냈다는 강한 주장인데 기존 번역은 고민했다는 뜻으로 약화했습니다. 번역의 충실도를 위해 그 강도를 복원했습니다. 이는 슈라이버의 논지를 옮긴 것이며 예술의 정의에 관한 논쟁이 객관적으로 종결됐다는 검토팀의 판정은 아닙니다.",
+      "explanation": "",
+      "source_evidence": "already figured out how to judge if something is “art” or not",
+      "reviewed_translation_excerpt": "이미 예술 여부의 판단을 고민했습니다.",
+      "sources": [],
+      "before": "이미 예술 여부의 판단을 고민했습니다.",
+      "after": "이미 무엇이 예술인지 판단하는 방법을 알아냈습니다."
+    },
+    {
+      "id": "R06-05",
+      "n": 6,
+      "blocks": [
+        59
+      ],
+      "title": "1994년과 PlayStation 출시 비교",
+      "category": "원문 지역·연대 범위",
+      "certainty": "확정",
+      "status": "기존 주의 문구에 구체적인 확인 근거 추가",
+      "translation_error": false,
+      "note": "초대 PlayStation의 일본 출시는 1994년 12월 3일, 북미 출시는 1995년 9월 9일입니다. 따라서 1994년을 출시 1년 전이라고 한 표현은 북미 출시를 기준으로 읽을 수 있지만 세계 최초 출시 기준으로는 맞지 않습니다. 저자가 어느 지역을 의도했는지는 확정하지 않습니다.",
+      "explanation": "",
+      "source_evidence": "1994 (this was a year before the first PlayStation was released",
+      "reviewed_translation_excerpt": "1994년 논문도 있었습니다. 원문은 이를 첫 PlayStation 출시 1년 전이라고 설명합니다.",
+      "sources": [
+        {
+          "url": "https://blog.playstation.com/2015/09/09/20-years-ago-today-2/",
+          "title": "PlayStation 공식 출시일 회고"
+        }
+      ]
+    },
+    {
+      "id": "R07-01",
+      "n": 7,
+      "blocks": [
+        19
+      ],
+      "title": "RISK 공격 병력과 주사위",
+      "category": "번역 조건 누락",
+      "certainty": "확정",
+      "status": "이번에 번역 수정",
+      "translation_error": true,
+      "note": "원문 attacking with의 “공격에 투입하는” 조건을 복원했습니다. 확인한 Hasbro 규칙에서는 출발 영토에 한 부대를 남겨야 하므로 공격 주사위 3개를 쓰려면 그 영토의 총 병력이 적어도 4개여야 합니다. 영토에 병력이 총 3개 있다는 것만으로 주사위 3개를 쓸 수 있다는 뜻이 아닙니다.",
+      "explanation": "",
+      "source_evidence": "if you are attacking with 3 or more armies",
+      "reviewed_translation_excerpt": "병력이 셋 이상이면 1·2·3개 중 고를 수 있지만",
+      "sources": [
+        {
+          "url": "https://www.hasbro.com/common/instruct/risk1959.pdf",
+          "title": "Hasbro 공식 게임 규칙"
+        }
+      ],
+      "before": "병력이 셋 이상이면 1·2·3개 중 고를 수 있지만",
+      "after": "공격에 투입할 병력이 세 부대 이상이면 주사위 1·2·3개 중 고를 수 있지만"
+    },
+    {
+      "id": "R07-02",
+      "n": 7,
+      "blocks": [
+        23
+      ],
+      "title": "배틀십의 불완전 정보",
+      "category": "원문 이론 분류의 한계",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "깜깜이 결정은 이 강의의 교육적 분류입니다. 배틀십에서는 명중·실패와 배의 크기·연속 배치 제약을 통해 가능한 배치를 줄일 수 있습니다. 정답을 확정하지 못한다는 것과 정보에 근거한 판단을 할 수 없다는 것은 다릅니다. 모든 사격 위치가 전략적으로 동등하다는 설명으로 일반화하지 마세요.",
+      "explanation": "",
+      "source_evidence": "more constrained but not any less blind",
+      "reviewed_translation_excerpt": "더 제한될 뿐 여전히 깜깜이입니다.",
+      "sources": [
+        {
+          "url": "https://instructions.hasbro.com/en-us/instruction/Battleship-Classic-Board-Game-Strategy-Game",
+          "title": "Hasbro 공식 배틀십 안내"
+        }
+      ]
+    },
+    {
+      "id": "R07-03",
+      "n": 7,
+      "blocks": [
+        44
+      ],
+      "title": "몰입의 생리 설명과 3배 재미",
+      "category": "원문 이론·측정 범위",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "몰입의 에너지·뇌 작동 설명은 디자인을 위한 단순 모형으로 읽으세요. 난이도만 맞추면 누구나 몰입한다거나, 주관적 몰입과 생리 지표가 항상 일치한다는 보장이 아닙니다. 후속 연구에서도 두 측정이 같은 패턴을 보이지 않는 사례가 있습니다. MDA의 세 층 때문에 게임이 “세 배” 흥미롭다는 말도 측정된 효과 크기가 아니라 저자의 비유입니다. 몰입 이론 전체를 오류로 판정하는 항목은 아닙니다.",
+      "explanation": "",
+      "source_evidence": "It would only do this if it needs to in order to succeed at the task",
+      "reviewed_translation_excerpt": "성공에 필요할 때만 그렇게 할 것입니다.",
+      "sources": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12202627/",
+          "title": "Lu 외(2025) 원 연구 논문"
+        }
+      ]
+    },
+    {
+      "id": "R07-04",
+      "n": 7,
+      "blocks": [
+        69
+      ],
+      "title": "손들기와 의미 있는 결정 횟수",
+      "category": "원문 통계 출처·추론 한계",
+      "certainty": "미확인: 조사 출처·측정 조건이 원문에 없음",
+      "status": "근거 미확인 · 거짓으로 단정하지 않음",
+      "translation_error": false,
+      "note": "원문은 “대학생이 평균 10주에 한 번 손을 든다”는 조사 출처·대상·시점·측정 방법을 제시하지 않습니다. 이 숫자를 현재 대학생 전체의 검증된 통계로 재인용하지 마세요. 손들기 횟수와 의미 있는 결정 횟수는 다른 지표이므로 연 3회를 실제 의사결정 빈도로 읽을 수도 없습니다. 출처 미확인은 수치가 거짓이라는 결론과 다릅니다.",
+      "explanation": "",
+      "source_evidence": "the average college student raises their hand in class once every ten weeks",
+      "reviewed_translation_excerpt": "대학생이 평균 10주에 한 번 손을 든다는 통계를 본 적 있습니다. 일 년에 의미 있는 결정 세 번이라니요!",
+      "sources": []
+    },
+    {
+      "id": "R08-01",
+      "n": 8,
+      "blocks": [
+        50
+      ],
+      "title": "바틀의 플레이어 유형과 그리퍼",
+      "category": "원문 이론의 적용범위·타 문헌의 단순화",
+      "certainty": "확정",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "바틀의 네 유형은 MUD에서의 놀이 성향을 이해하려는 분류입니다. 한 플레이어가 여러 성향을 보일 수 있습니다. 킬러는 원논문에서 다른 플레이어에게 일방적으로 영향을 주려는 성향을 가리키므로, 이 강의의 ‘그리퍼’ 설명과 완전히 같은 범위는 아닙니다. 탐험 역시 지도 탐색 외에 시스템 실험을 포함합니다. 다른 장르에 적용할 때에는 해당 게임의 플레이 관찰로 확인하세요.",
+      "explanation": "번역은 원문을 따릅니다. 다만 Bartle 원문은 한 상용 MUD의 숙련 이용자 토론에서 출발한 분류이며 네 성향이 한 사람에게 교차한다고 설명합니다. Killers는 다른 플레이어에게 일방적으로 작용하는 성향으로, 드물지만 본인이 선의라고 생각하는 간섭도 포함합니다. Explorers도 지형 탐사뿐 아니라 게임의 작동 원리를 실험하는 탐구를 포함합니다. 따라서 네 고정 인격유형, 모든 장르의 보편분류, Killers와 악의적 괴롭힘의 완전한 동의관계로 읽으면 원자료 범위보다 좁거나 넓어집니다.",
+      "source_evidence": "Killers (today we call them “griefers”) derive their fun from ruining other people’s fun.",
+      "reviewed_translation_excerpt": "킬러(Killers): 원저자가 당시 ‘그리퍼’라고 설명한 유형으로, 남의 즐거움을 망치는 데서 즐거움을 얻습니다. / 76번: 바틀의 킬러, 즉 그리퍼에게 특별히 매력적인 게임 개념을 만들어 게시판에 올리세요.",
+      "sources": [
+        {
+          "url": "https://mud.co.uk/richard/hcds.htm",
+          "title": "Richard Bartle 원 논문"
+        }
+      ]
+    },
+    {
+      "id": "R08-02",
+      "n": 8,
+      "blocks": [
+        63
+      ],
+      "title": "학습 양식 비유와 실제 학습 성과",
+      "category": "원문의 교육적 비유·실증 근거 적용범위",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "여기의 학습 양식은 수업에서 다양한 경험을 제공하자는 비유로 읽으세요. 선호하는 제시 방식과 실제 학습 성과는 같은 개념이 아닙니다. 학생을 시각형·청각형 등으로 고정 분류하고 그 유형에 수업을 맞추면 효과가 검증되었다는 뜻으로 받아들이지 마세요. 후속 연구 중에는 VARK와 학습전략의 일치가 성과와 관련되지 않은 결과도 있습니다.",
+      "explanation": "본문은 다양한 감각과 재미를 활용하는 수업 비유이지, 학생을 고정된 시각형·청각형·운동감각형으로 진단하라는 명시적 실험 결과가 아닙니다. 다만 학습양식에 맞추면 성과가 오른다는 주장으로 오독될 수 있습니다. Husmann와 O’Loughlin의 해부학 수강생 426명 연구에서는 VARK와 학습전략의 일치가 해당 과목 성과와 상관되지 않았습니다. 이 한 연구를 모든 교육상황에서의 인과적 무효를 입증한 실험으로 확대해서도 안 됩니다.",
+      "source_evidence": "you might refer to as Audio, Visual, or Kinesthetic learning.",
+      "reviewed_translation_excerpt": "지난번처럼 교육과 직접 연결됩니다. 제가 유형과 재미를 말할 때 교육자는 학습 양식을 떠올릴 수 있습니다. 감각·서사·표현의 재미를 청각·시각·운동감각 학습이라 부를 수 있습니다.",
+      "sources": [
+        {
+          "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/abs/10.1002/ase.1777",
+          "title": "Husmann·O’Loughlin의 학습 양식 연구"
+        }
+      ]
+    },
+    {
+      "id": "R09-01",
+      "n": 9,
+      "blocks": [
+        16
+      ],
+      "title": "『시학』의 비극·희극 정의",
+      "category": "원문 자체의 고전 설명 부정확",
+      "certainty": "확정",
+      "status": "기존 주의 문구에 구체적인 확인 근거 추가",
+      "translation_error": false,
+      "note": "이 대목은 슈라이버의 요약에 부정확한 부분이 있습니다. 『시학』은 비극뿐 아니라 시적 모방의 여러 종류를 논합니다. 비극·희극의 차이를 초자연적 요소의 유무로 정의하지 않습니다. 고전의 정의는 『시학』 제1·5·6장을 참고하세요. 본문은 역사적 원문을 충실히 옮긴 것이므로, 번역자의 주장과 구분합니다.",
+      "explanation": "현재 번역은 원저자의 설명임을 명시하고 단순화 경고도 붙였습니다. 그러나 아리스토텔레스 『시학』 제1장은 시적 모방의 여러 종류를 다루고, 제5·6장의 희극·비극 정의는 환상 유무에 따른 이분법이 아닙니다. 비극은 진지하고 완결된 일정 규모의 행위의 모방으로 설명하고, 희극은 낮은 유형의 인물에서 우스운 면을 모방한다고 설명합니다. ‘시가 아니라 비극만의 책’, ‘환상은 희극’이라는 요약을 정확한 정의로 학습하지 않도록 구체적 정정이 필요합니다.",
+      "source_evidence": "a story devoid of the supernatural or fantastical (which he referred to as comedy)",
+      "reviewed_translation_excerpt": "아리스토텔레스 시대의 많은 단어는 오늘날 우리가 쓰는 뜻과 달랐습니다. 시학 은 시가 아니라 비극을 쓰는 방법에 관한 책입니다. 원저자의 설명에 따르면, 아리스토텔레스가 사용한 ‘비극’은 ‘슬픈 결말의 이야기’가 아니라 진지하고 삶을 닮은 이야기, 곧 초자연적이거나 환상적인 요소가 없는 이야기였으며, 그는 그런 요소가 있는 것을 ‘희극’이라고 불렀습니다. 역주: 이 문단은 원저자의 아리스토텔레스 설명을 옮긴 것입니다. 비극·희극의 구분과 아래의 3막 구조 귀속은 원문의 단순화된 설명이며, 검증된 고전학적 정의로 제시하는 것은 아닙니다.",
+      "sources": [
+        {
+          "url": "https://classics.mit.edu/Aristotle/poetics.1.1.html",
+          "title": "아리스토텔레스 『시학』 원전 영어 번역"
+        }
+      ]
+    },
+    {
+      "id": "R09-02",
+      "n": 9,
+      "blocks": [
+        20
+      ],
+      "title": "시작·중간·끝과 현대 3막 구성",
+      "category": "원문 자체의 구조론 귀속 과장",
+      "certainty": "확정",
+      "status": "기존 주의 문구에 구체적인 확인 근거 추가",
+      "translation_error": false,
+      "note": "『시학』의 시작·중간·끝과 현대의 3막 구성은 구분하세요. 전자는 완결된 사건의 연결에 관한 설명이며, 여기서 제시한 3막 도식 전체를 아리스토텔레스가 직접 정의했다고 읽는 것은 부정확합니다.",
+      "explanation": "『시학』 제7장의 시작·중간·끝은 완결된 플롯의 인과적 구성에 관한 설명입니다. 해당 설명이 곧 오늘날의 설정·대립·해결 3막 틀을 정의한 것이라는 귀속은 원전 근거보다 나아갑니다. 아리스토텔레스가 그 말들을 사용했다는 사실과 현대 3막 구성을 직접 정의했다는 주장을 구분해야 합니다.",
+      "source_evidence": "Poetics also defined what is known as the three-Act structure for stories",
+      "reviewed_translation_excerpt": "원저자의 설명에 따르면 시학 은 이야기의 ‘3막 구조’라고 알려진 것도 정의했습니다. 기본적으로 이야기를 세 부분으로 나누는 것입니다. 첫 부분에서는 무언가가 일어나 이야기의 사건들이 움직이기 시작합니다. 대개 가장 긴 두 번째 부분에서는 주인공이 일어나는 사건들에 대처하려고 합니다. 마지막 부분에서 해결에 도달합니다. 출처를 특정하지 않은 비유를 재서술하면, 1막에서 주인공을 나무 위로 몰아넣고, 2막에서 돌을 던져 곤경을 더하며, 3막에서 나무에서 내려오게 하는 셈입니다.",
+      "sources": [
+        {
+          "url": "https://classics.mit.edu/Aristotle/poetics.1.1.html",
+          "title": "아리스토텔레스 『시학』 원전 영어 번역"
+        }
+      ]
+    },
+    {
+      "id": "R09-03",
+      "n": 9,
+      "blocks": [
+        25
+      ],
+      "title": "『시학』 여섯 요소와 강의의 재해석",
+      "category": "원문 고전 용어의 현대식 재해석",
+      "certainty": "확정",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "이 목록은 게임 창작에 맞춘 원저자의 풀이입니다. 『시학』 원전의 여섯 요소를 확인할 때는 플롯·인물·언어·사상·볼거리·노래의 구분을 참고하세요. 강의의 ‘주제’와 ‘리듬’을 원전 용어의 엄밀한 동의어로 보지는 마세요.",
+      "explanation": "원전 제6장에 열거된 여섯 항목은 Plot, Character, Diction, Thought, Spectacle, Song입니다(Butcher 영어 번역 기준). 강의의 Theme와 Rhythm은 원전의 Thought와 Song에 대한 느슨한 현대식 풀이입니다. 원저자의 설명을 충실히 옮긴 번역이므로 한국어 오역은 아니지만, 고전의 정확한 용어 목록으로 암기하면 혼동할 수 있습니다.",
+      "source_evidence": "Theme. What does it all mean? / Rhythm. This does include “rhythm” in the sense of music",
+      "reviewed_translation_excerpt": "플롯: 실제로 무슨 일이 일어나는지 서술하는 이야기입니다. 주제: 그 모든 것은 무엇을 뜻하나요? 왜 일어나나요? 인물: 이야기 속의 한 역할입니다. 언어: 대사와 배우가 그것을 전달하는 방식입니다. 리듬: 음악에서 말하는 리듬뿐 아니라 인간 언어의 자연스러운 리듬도 포함합니다. 볼거리: 아리스토텔레스 시대의 시각적 눈요기나 특수효과에 해당합니다. 그는 볼거리만 있고 다른 것은 없는 연극이 너무 많다고 자주 불평했습니다. 익숙하게 들리나요?",
+      "sources": [
+        {
+          "url": "https://classics.mit.edu/Aristotle/poetics.1.1.html",
+          "title": "아리스토텔레스 『시학』 원전 영어 번역"
+        }
+      ]
+    },
+    {
+      "id": "R10-01",
+      "n": 10,
+      "blocks": [
+        30
+      ],
+      "title": "분기 경로 수의 N² 표기",
+      "category": "원문 수학 표기 오류·계산 모형의 조건",
+      "certainty": "확정",
+      "status": "기존 본문 주석 확인 · 근거를 이 문서에 정리",
+      "translation_error": false,
+      "note": "N을 연속된 이진 선택 횟수로 놓고 분기가 다시 합쳐지지 않으면 경로 수는 2ᴺ이며 N²가 아닙니다. 이 원문 오기는 이미 번역 주에서 설명했습니다. N!도 N개 사건을 각각 한 번씩 모든 순서로 진행하는 특정 모형의 값입니다. 실제 제작·테스트 비용을 판단할 때는 N이 무엇인지, 경로 합류와 순서 제약이 있는지부터 정해야 합니다.",
+      "explanation": "원문 앞부분은 이진 선택 10번에 1024개 경로라고 설명합니다. N을 연속된 선택 횟수로 두고 매번 두 갈래로 갈라져 합쳐지지 않는다면 경로 수는 2^N이며 N²가 아닙니다. 게시본은 이를 정확히 지적하는 번역 주를 이미 포함합니다. N!도 N개 사건을 각각 한 번씩 모든 순서로 진행하는 모형에 해당하며, 의존관계·반복·선택 사건이 있는 실제 서사의 일반적인 복잡도를 곧바로 뜻하지 않습니다.",
+      "source_evidence": "a branching story with two choices per choice point is O(N^2)",
+      "reviewed_translation_excerpt": "하지만 여전히 문제가 있습니다. 먼저 사건끼리 영향을 줄 수 있어 가능한 모든 경로를 시험하는 일이 분기 서사보다 더 복잡할 수 있습니다. 프로그래밍에 익숙한 분에게 원문은 선택 지점마다 두 선택지가 있는 분기 이야기를 O(N²), 여러 이야기 실 구조를 잠재적으로 O(N!)라고 표현합니다. 그렇습니다. 팩토리얼입니다. 번역 주: O(N²)는 원문 표기를 보존했습니다. N을 이진 선택의 횟수로 잡으면 앞에서 설명한 경로 수는 2ⁿ이며, 본문의 복잡도 표기는 이 설명과 일치하지 않습니다. 여기서 중요한 논지는 가능한 진행 순서의 수가 빠르게 늘어난다는 것입니다.",
+      "sources": [
+        {
+          "url": "https://openlearninglibrary.mit.edu/assets/courseware/v1/3516ad6170983ee96d9127c98bff33b9/asset-v1%3AOCW%2B6.042J%2B2T2019%2Btype%40asset%2Bblock/MIT6_042JS16_SumProduct.pdf",
+          "title": "MIT: 합의 법칙과 곱의 법칙"
+        },
+        {
+          "url": "https://www.stat.berkeley.edu/~stark/SticiGui/Text/counting.htm",
+          "title": "UC Berkeley: 경우의 수 계산"
+        }
+      ]
+    },
+    {
+      "id": "R12-01",
+      "n": 12,
+      "blocks": [
+        23
+      ],
+      "title": "사용성 검사의 적용 범위와 시점",
+      "category": "비디지털 프로젝트 지침의 적용범위",
+      "certainty": "조건부",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "여기의 순서는 이번 비디지털 과제를 위한 기본 진행안입니다. 원저자도 고정된 순서가 아니라고 설명합니다. 디지털 게임의 사용성·접근성은 그림과 배치뿐 아니라 입력 방식과 요구 속도 등에도 걸쳐 있으므로, 필요한 항목은 초기 프로토타입부터 점검하세요.",
+      "explanation": "과제는 비디지털 게임 제작이며, 원문 22·24번은 이 순서가 강제 규칙이 아니라 프로젝트에 따라 바꿀 지침이라고 명시합니다. 따라서 원문 전체를 보편적 오류로 판정하면 부당합니다. 다만 이 한 문장을 모든 게임의 사용성 정의나 사용성 검사를 후반까지 미루라는 규칙으로 일반화하면 문제가 됩니다. 현대 디지털 게임의 접근성 지침은 시각 외에도 입력 속도·연속 입력·지속 입력 등을 다루며 설계 초기부터 고려할 것을 권합니다.",
+      "source_evidence": "When you change usability you are not changing any mechanics, merely the way those mechanics are presented visually",
+      "reviewed_translation_excerpt": "후반에 작동과 균형이 갖춰지면 사용성을 더 생각하세요. 사용성 변경은 메커니즘 자체가 아니라 시각적으로 전달하는 방식을 바꾸는 것입니다.",
+      "sources": [
+        {
+          "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/107",
+          "title": "Xbox 접근성 지침: 입력"
+        },
+        {
+          "url": "https://developer.microsoft.com/en-us/games/resources/productinclusion/accessibility/",
+          "title": "Microsoft 게임 접근성 안내"
+        }
+      ]
+    },
+    {
+      "id": "R13-01",
+      "n": 13,
+      "blocks": [
+        34
+      ],
+      "title": "과거 과제 기한: 8월 17일과 20일",
+      "category": "원문 날짜 불일치",
+      "certainty": "확정",
+      "status": "기존 본문 주석 확인 · 근거를 이 문서에 정리",
+      "translation_error": false,
+      "note": "13강의 “다음 월요일(8월 20일)”은 요일과 날짜가 맞지 않습니다. 14강의 안내와 대조하면 해당 월요일은 2009년 8월 17일입니다. 기존 번역 주도 이 불일치를 알리고 있습니다. 이것은 과거 수업 일정이며 현재 제출 기한이 아닙니다.",
+      "explanation": "2009년 8월 20일은 목요일이며, 8월 13일 다음 월요일은 8월 17일입니다. 게시본은 이미 이 불일치를 설명합니다. 공식 14강 과제는 같은 디자이너 테스트 마감을 다음 월요일 8월 17일로 명시하며, 해당 글의 저자 댓글도 8월 17일/20일 정정을 확인합니다.",
+      "source_evidence": "next Monday (August 20)",
+      "reviewed_translation_excerpt": "첫째, 8월 13일 목요일 GMT 정오 전까지 다른 디자이너와 테스트할 약속을 잡으세요. 테스트 자체는 다음 월요일, 원문 표기로는 ‘8월 20일’까지 진행하세요. 번역 주: 원문의 요일과 날짜가 일치하지 않습니다. 2009년 8월 13일은 목요일이고 다음 월요일은 8월 17일이며, 8월 20일은 목요일입니다. 저자의 문구를 보존하고 불일치를 표시했습니다.",
+      "sources": [
+        {
+          "url": "https://gamedesignconcepts.wordpress.com/2009/08/10/level-13-playing-with-designers/",
+          "title": "Ian Schreiber의 공식 강의"
+        },
+        {
+          "url": "https://gamedesignconcepts.wordpress.com/2009/08/13/level-14-playing-with-non-designers/",
+          "title": "Ian Schreiber의 공식 강의"
+        }
+      ]
+    },
+    {
+      "id": "R14-01",
+      "n": 14,
+      "blocks": [
+        19
+      ],
+      "title": "이미지 검색과 다른 사람의 그림 사용",
+      "category": "제3자 자료 이용 조언의 권리 적용범위",
+      "certainty": "확정",
+      "status": "기존 본문 주석 확인 · 근거를 이 문서에 정리",
+      "translation_error": false,
+      "note": "이미지 검색으로 찾았다는 사실만으로 재사용 허락이 생기지는 않습니다. 본문의 조언은 2009년 프로토타입 제작 맥락이며 외부 그림에 대한 허락이 아닙니다. 현재 번역에는 이를 구분하는 권리 주가 있고 해당 그림을 복제하지 않았습니다. 공개할 결과물에는 직접 만들었거나 그 용도에 맞는 권리가 확인된 자료를 사용하세요.",
+      "explanation": "원문은 프로토타입 제작 속도를 위한 조언으로 이미지 검색과 복사·붙여넣기를 권합니다. 원저자의 강의에 대한 CC 라이선스와 외부 그림의 권리는 별개이며, 검색 결과 자체는 이용허락의 확인이 아닙니다. 게시본은 이미 이를 설명하고 그림을 복제하지 않습니다. 특정 비공개 프로토타입의 법적 허용 여부나 모든 제3자 인용의 적법성을 이 검토로 단정하지 않습니다.",
+      "source_evidence": "Steal other people’s artwork liberally.",
+      "reviewed_translation_excerpt": "다른 사람의 그림을 거리낌 없이 가져다 쓰세요. 번역·권리 주: 앞 문장들은 2009년 원문의 거친 프로토타입 제작 조언을 보존한 번역이며, 제3자 그림의 이용허락을 뜻하지 않습니다. 이 번역 사이트는 그런 그림을 복제하지 않습니다.",
+      "sources": [
+        {
+          "url": "https://creativecommons.org/faq/#does-a-creative-commons-license-give-me-all-the-rights-i-need-to-use-the-work",
+          "title": "Creative Commons 공식 권리 안내"
+        },
+        {
+          "url": "https://creativecommons.org/faq/#may-i-apply-a-cc-license-to-my-work-if-it-incorporates-material-used-under-fair-use-or-another-exception-or-limitation-to-copyright",
+          "title": "Creative Commons 공식 권리 안내"
+        }
+      ]
+    },
+    {
+      "id": "15-blindtest-vs-double-blind",
+      "n": 15,
+      "blocks": [
+        0,
+        9,
+        10,
+        12
+      ],
+      "title": "게임 블라인드 테스트와 연구의 이중맹검",
+      "category": "원문 이론·용어의 적용 범위",
+      "certainty": "확정: 두 용어의 조건이 다름. 게임 테스트 조언 자체를 오류라고 판단하지 않음.",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "여기서 블라인드 테스트는 디자이너의 도움 없이 플레이하게 하는 게임 개발 용어입니다. 임상연구의 이중맹검은 참가자와 연구자가 누가 어떤 개입을 받는지 모르게 하는 절차입니다. 편향을 줄이려는 취지는 같지만 동일한 실험 설계는 아닙니다.",
+      "explanation": "번역은 원문을 따른다. 게임의 블라인드 테스트를 연구의 이중맹검과 같은 설계로 이해하면 안 된다. 이 강의는 디자이너가 없는 테스트를 뜻한다. 연구의 눈가림은 조건·개입을 특정 당사자가 모르게 하는 절차이므로 연구자의 현장 부재만으로 이중맹검이 성립하지 않는다. ‘맞는 답을 모른다’도 엄밀한 정의로 쓰기에는 부정확한 비유이다.",
+      "source_evidence": "neither the researchers nor the test subjects know what the “right” answer is",
+      "reviewed_translation_excerpt": "연구자와 피험자 모두 ‘맞는’ 답을 모르는 이중맹검 실험입니다. / 디자이너가 현장에 와서 관찰하지 않는 플레이테스트를 ‘블라인드 테스트’라고 합니다.",
+      "sources": [
+        {
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/double-blind-study",
+          "title": "미국 국립암연구소: double-blind study"
+        }
+      ]
+    },
+    {
+      "id": "16-weighted-rps-assumptions",
+      "n": 16,
+      "blocks": [
+        46
+      ],
+      "title": "가위바위보 1:3:2가 성립하는 조건",
+      "category": "원문 수학 예제의 생략된 전제",
+      "certainty": "조건부: 1:3:2는 제로섬 또는 점수 차이를 보수로 삼으면 맞음. 숫자 오류로 단정하지 않음.",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "바위:보:가위=1:3:2는 상대와의 점수 차이를 보수로 보거나, 승자가 얻는 만큼 패자가 잃는 제로섬 모델에서 성립합니다. 승자에게만 점수를 더하고 각자가 자기 획득점수만 최대화한다면 모델과 답이 달라집니다. 혼합전략을 계산하기 전에 승리·패배·무승부의 보수와 목표를 먼저 정하세요.",
+      "explanation": "번역은 원문과 같다. 원문은 패자 점수 처리와 최적화할 보수를 명시하지 않는다. 상대와의 점수 차이를 최대화하거나 승자가 얻는 만큼 패자가 잃는 제로섬 모델이면 1:3:2가 성립한다. 패자는 0점이고 각자가 자기 획득점수의 기대값만 최대화하는 다른 모델에서는 3:6:2이다. 따라서 무조건적인 가중 가위바위보의 답으로 사용하면 안 된다.",
+      "source_evidence": "each win with Rock scores 3 points, a win with Paper scores 2 points, and a win with Scissors scores 1 point",
+      "reviewed_translation_excerpt": "바위로 이기면 3점, 보로 이기면 2점, 가위로 이기면 1점을 주도록 바꾸면 어떨까요? … 양쪽이 최적으로 하면 바위 한 번에 보 세 번, 가위 두 번입니다.",
+      "sources": [
+        {
+          "url": "https://ocw.mit.edu/courses/17-810-game-theory-spring-2021/mit17_810s21_lec3.pdf",
+          "title": "MIT OpenCourseWare: Mixed Strategy Nash Equilibrium"
+        },
+        {
+          "url": "https://people.eecs.berkeley.edu/~vazirani/algorithms/chap7.pdf",
+          "title": "Dasgupta·Papadimitriou·Vazirani, Algorithms 7.5"
+        }
+      ],
+      "calculation_verification": {
+        "method": "외부 자료의 무차별 조건을 적용한 자체 유리수 계산. 수치 예 자체를 외부 출처의 결론으로 귀속하지 않음.",
+        "order": "바위, 보, 가위",
+        "zero_sum_matrix": [
+          [
+            0,
+            -2,
+            3
+          ],
+          [
+            2,
+            0,
+            -1
+          ],
+          [
+            -3,
+            1,
+            0
+          ]
+        ],
+        "zero_sum_distribution": [
+          "1/6",
+          "1/2",
+          "1/3"
+        ],
+        "zero_sum_action_values": [
+          "0",
+          "0",
+          "0"
+        ],
+        "own_score_matrix": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "own_score_distribution": [
+          "3/11",
+          "6/11",
+          "2/11"
+        ],
+        "own_score_action_values": [
+          "6/11",
+          "6/11",
+          "6/11"
+        ],
+        "own_score_action_values_using_original_ratio": [
+          "1",
+          "1/3",
+          "1/2"
+        ],
+        "verification": "Python fractions.Fraction으로 행렬과 확률벡터의 곱을 정확히 계산함."
+      }
+    },
+    {
+      "id": "17-color-visibility",
+      "n": 17,
+      "blocks": [
+        47
+      ],
+      "title": "빨강·초록·파랑의 가시성 설명",
+      "category": "원문 시각·접근성 설명의 단순화",
+      "certainty": "확정: 색 이름만으로 보편적인 UI 가시성 순위를 정할 수 없음. 원문의 뒤쪽 색 외 단서 권고는 유효한 방향임.",
+      "status": "원문과 구분한 추가 학습 주",
+      "translation_error": false,
+      "note": "‘빨강·초록이 파랑보다 잘 보인다’는 문장을 보편적인 UI 규칙으로 적용하지 마세요. 밝기 감도와 주의를 끄는 정도는 같은 개념이 아니며 실제 화면에서는 배경 대비와 사용자의 색 지각을 함께 고려해야 합니다. 원문이 이어서 권하듯 색만으로 정보를 구분하지 말고 글자·모양 등 다른 단서를 함께 제공하세요. 웹에서는 W3C의 색 사용·명도 대비 지침을 참고할 수 있습니다.",
+      "explanation": "번역은 충실하지만 보편적인 UI 색 선택 규칙으로 쓰면 지나친 일반화가 된다. NIST의 명소시 표준 광효율은 파장에 따른 함수이며 555 nm에서 최대이다. 이것은 빨강·초록·파랑의 단순 서열이나 실제 UI의 눈에 띔과 같은 기준이 아니다. W3C도 색만으로 정보를 전달하지 말고 다른 시각 단서와 명도 대비를 고려하도록 설명한다. 원문도 바로 뒤에서 모양·밝기를 함께 쓰라고 권하므로 연결하여 읽어야 한다.",
+      "source_evidence": "The colors that normal human eyes detect most easily are red and green, followed by blue.",
+      "reviewed_translation_excerpt": "일반적인 인간의 눈이 가장 쉽게 감지하는 색은 빨강과 초록이며 그다음이 파랑입니다.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/pml/sensor-science/optical-radiation/realization-candela",
+          "title": "NIST: Realization of the candela"
+        },
+        {
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+          "title": "W3C WCAG 2.2 Understanding: Use of Color"
+        }
+      ]
+    },
+    {
+      "id": "17-aircraft-anecdote",
+      "n": 17,
+      "blocks": [
+        24
+      ],
+      "title": "전투기 조작부 일화의 확인 한계",
+      "category": "원문 일화의 출처·검증 한계",
+      "certainty": "조건부/미확인: 사건이 거짓이라는 판단은 하지 않음.",
+      "status": "근거 미확인 · 거짓으로 단정하지 않음",
+      "translation_error": false,
+      "note": "전투기 조작부와 사출 좌석 이야기는 원저자가 수업에서 사용한 일화입니다. 강의에는 기종이나 조사 보고서가 없고 이번 검토에서도 사건의 1차 기록을 확인하지 못했습니다. 검증된 항공 사고 사례나 학습 불가능성의 증거보다는 인터페이스 관습의 중요성을 설명하는 일화로 읽으세요.",
+      "explanation": "원문과 번역에 기종·시기·사고조사 보고서·실험 근거가 없다. 이번 검색에서 확인할 항공 당국·군·제조사의 1차 기록을 찾지 못했다. 검색에서 확인되지 않았다고 거짓이라고 결론 내릴 수는 없다. 특히 아무리 훈련해도 바뀌지 않았다는 문장을 인간은 기존 심적 모델을 바꿀 수 없다는 일반적 증거로 인용하지 않는 편이 좋다.",
+      "source_evidence": "the positions of the throttle and the ejection seat controls were reversed",
+      "reviewed_translation_excerpt": "모든 경우 훈련기에서는 추력 조절 장치와 사출 좌석 조작부의 위치가 반대였습니다! … 새 기체에서 아무리 훈련해도 바뀌지 않았던 것입니다.",
+      "sources": []
+    }
+  ],
+  "common": [
+    {
+      "id": "license-scope",
+      "title": "강의의 CC BY 허락과 외부 자료의 권리를 구분하기",
+      "status": "기존 처리 확인 · 별도 허락은 미확인",
+      "text": "공식 블로그의 CC BY 3.0 US 표시는 Ian Schreiber가 제공하는 강의 본문을 번역하는 근거입니다. 각 강의에 원저자·제목·원문 주소·라이선스·번역 사실이 표시되어 있습니다. 그러나 링크된 책·논문·게임 이미지·다른 저자의 인용까지 자동으로 같은 허락을 받는 것은 아닙니다. 이번 재검토에서도 이미지·영상·외부 삽입 자료가 공개 강의 HTML에 없는 것을 확인했습니다. 개별 권리를 새로 확보했다는 뜻은 아닙니다.",
+      "sources": [
+        {
+          "title": "공식 블로그의 저작권 표시",
+          "url": "https://gamedesignconcepts.wordpress.com/"
+        },
+        {
+          "title": "CC BY 3.0 US 규약 3·4·5항",
+          "url": "https://creativecommons.org/licenses/by/3.0/us/legalcode"
+        },
+        {
+          "title": "Creative Commons: 제3자 자료의 권리 범위",
+          "url": "https://creativecommons.org/faq/#may-i-apply-a-cc-license-to-my-work-if-it-incorporates-material-used-under-fair-use-or-another-exception-or-limitation-to-copyright"
+        }
+      ]
+    },
+    {
+      "id": "paraphrase-scope",
+      "title": "재서술·이미지 제외의 의미",
+      "status": "권리 처리의 한계",
+      "text": "제3자 인용을 요지로 바꾼 것은 개념을 설명하기 위한 편집 처리이며, 모든 재서술이 자동으로 권리 문제가 없다는 판정은 아닙니다. 미국 저작권청도 아이디어·절차와 그것을 표현한 문장·그림을 구분합니다. 이 번역에 실리지 않은 원본 도판·규칙서·교재를 다시 넣거나 별도 배포하려면 그 자료의 실제 이용 조건을 확인해야 합니다. 14강의 Google 이미지 검색 복사 조언과 11강의 유명 IP 사용 예는 2009년 수업의 제안일 뿐 외부 권리자의 허락이 아닙니다.",
+      "sources": [
+        {
+          "title": "미국 저작권청 Circular 33: 아이디어와 표현의 구분",
+          "url": "https://www.copyright.gov/circs/circ33.pdf"
+        },
+        {
+          "title": "강의별 실제 제외·대체 내역",
+          "url": "rights-review.html"
+        }
+      ]
+    },
+    {
+      "id": "historical-homeplay",
+      "title": "2009년 제출 기한과 참여 방법을 그대로 따르지 않기",
+      "status": "현재 학습 방법 안내",
+      "text": "등록·트위터·게시판·설문·마감일은 당시 강좌의 안내입니다. 저자가 강좌 종료 뒤 별도로 올린 안내는 날짜를 무시하고 순서대로 공부하며, 게시판 등에 제출하라는 과제는 개인 문서에 보관하고 함께 공부하는 사람이 있으면 서로 공유하라고 설명합니다. 이 방식으로 실습을 진행할 수 있습니다. 번역 완료 범위는 20개 강의 글이며, 별도 교재와 외부 읽기 자료의 전문까지 포함한 것은 아닙니다.",
+      "sources": [
+        {
+          "title": "저자의 늦게 시작하는 학습자를 위한 안내",
+          "url": "https://gamedesignconcepts.wordpress.com/2009/09/09/i-just-found-this-blog-what-do-i-do/"
+        }
+      ]
+    },
+    {
+      "id": "external-links",
+      "title": "오래된 참고 링크와 바뀐 연결 대상",
+      "status": "접속 기록과 이용허락을 구분",
+      "text": "90개 원문 참고·이미지 URL의 접속 기록에는 사라진 페이지, 자동 접속 거부, 다른 페이지로의 이동이 포함되어 있습니다. HTTP 200 응답만으로 원래 자료가 남아 있다고 판단할 수 없습니다. 앞선 작업에서 같은 글을 확인한 Gamasutra 자료 6건은 현재 출판사 주소로 갱신했고, RISK·Typepad·Façade의 다른 용도로 바뀐 연결은 비활성화했습니다. 나머지 과거 링크도 현재 내용이나 재사용 허락을 보증하지 않습니다.",
+      "sources": [
+        {
+          "title": "원문 주소와 접속 확인 기록",
+          "url": "reference-links.json"
+        }
+      ]
+    },
+    {
+      "id": "affiliate-links",
+      "title": "도서 링크의 제휴 매개변수 잔존을 정리",
+      "status": "이번 검토에서 수정",
+      "text": "9강 본문에서는 Amazon 제휴·추적 매개변수를 제거했지만, 하단 참고자료 목록에는 원문의 매개변수가 남아 있었습니다. 20강의 도서 링크와 권리 검토의 자료 목록에도 같은 형태가 있었습니다. 공개된 클릭 링크는 같은 상품 식별자를 사용하는 HTTPS 주소로 통일했습니다. 원문에 있었던 주소는 추적 기록용 JSON에 보존합니다. 이 조치는 책의 권리·품질·현재 판매 여부를 새로 확인했다는 의미는 아닙니다.",
+      "sources": [
+        {
+          "title": "9강 참고자료",
+          "url": "level-09.html"
+        },
+        {
+          "title": "20강 참고자료",
+          "url": "level-20.html"
+        },
+        {
+          "title": "원문 링크 보존 기록",
+          "url": "reference-links.json"
+        }
+      ]
+    }
+  ],
+  "scope_limits": [
+    "Not an independent factual verification of every assertion in the source.",
+    "No blanket clearance of third-party rights.",
+    "Original author errors and assumptions remain distinguished from translation corrections."
+  ]
+}
