@@ -1,4 +1,5 @@
 "use strict";
+// Layout uses four card columns; half-column positions center shared foundations.
 // IDs are permanent link targets. Prerequisites are recommended learning dependencies, not access locks.
 const CURRICULUM = {
   version: 1,
@@ -10,7 +11,7 @@ const CURRICULUM = {
   ],
   lessons: [
     {
-      id: "01", title: "AI와 함께 개발하기", subtitle: "사람과 AI의 역할", stage: 1, row: 1, col: 2, prerequisites: [],
+      id: "01", title: "AI와 함께 개발하기", subtitle: "사람과 AI의 역할", stage: 1, row: 1, col: 2.5, prerequisites: [],
       description: "만들고 싶은 경험을 정하고, AI가 만든 결과를 판단하는 일이 개발의 출발점입니다.",
       topics: ["기획·설계·구현·검증·배포·운영의 흐름", "사람이 결정할 게임 규칙과 AI에게 맡길 구현", "요구사항에 빠진 정보와 AI의 가정", "설명·변경 내역·실행 결과의 구분"],
       concepts: [
@@ -25,7 +26,7 @@ const CURRICULUM = {
       outcome: "AI가 만들었다는 보고와, 내가 원하는 동작이 확인됐다는 근거를 구분할 수 있습니다."
     },
     {
-      id: "02", title: "프로젝트와 실행 환경", subtitle: "파일은 어디에서 실행될까?", stage: 1, row: 2, col: 1, prerequisites: ["01"],
+      id: "02", title: "프로젝트와 실행 환경", subtitle: "파일은 어디에서 실행될까?", stage: 1, row: 2, col: 1.5, prerequisites: ["01"],
       description: "어느 폴더를 수정하고 어떤 결과물을 실행하는지 알아야 다른 작업을 건드리거나 오래된 화면을 확인하는 일을 줄일 수 있습니다.",
       topics: ["프로젝트·폴더·파일·경로", "소스 코드·그림과 소리·설정 파일", "편집기·엔진·라이브러리·터미널의 역할", "작성·빌드·실행과 브라우저 미리보기"],
       concepts: [
@@ -41,7 +42,7 @@ const CURRICULUM = {
       sources: [["MDN · 로컬 실행 환경", "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server"]]
     },
     {
-      id: "03", title: "요구사항과 완료 기준", subtitle: "아이디어를 게임 규칙으로", stage: 1, row: 2, col: 3, prerequisites: ["01"],
+      id: "03", title: "요구사항과 완료 기준", subtitle: "아이디어를 게임 규칙으로", stage: 1, row: 2, col: 3.5, prerequisites: ["01"],
       description: "요청이 길어지는 것보다 게임의 조건과 확인 기준이 분명해지는 것이 중요합니다.",
       topics: ["플레이 경험과 구체적인 규칙", "입력·조건·동작·결과", "예외·제한·우선순위", "현재 범위와 완료 기준"],
       concepts: [
@@ -73,7 +74,7 @@ const CURRICULUM = {
       sources: [["Git · 버전 관리란", "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"], ["GitHub · Git과 GitHub", "https://docs.github.com/en/get-started/start-your-journey/what-is-github"], ["GitHub Pages 소개", "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"]]
     },
     {
-      id: "05", title: "게임 정보의 표현", subtitle: "값 · 목록 · 식별자 · 규칙", stage: 2, row: 3, col: 2, prerequisites: ["02", "03"],
+      id: "05", title: "게임 정보의 표현", subtitle: "값 · 목록 · 식별자 · 규칙", stage: 2, row: 3, col: 2.5, prerequisites: ["02", "03"],
       description: "게임의 정보가 무엇이고 어떤 관계를 가지는지 이해하면 세부 문법을 몰라도 데이터 구조를 논의할 수 있습니다.",
       topics: ["숫자·문자·참과 거짓 등의 자료형", "변수·상수·목록·개체", "고유 식별자와 참조", "조건·반복·함수"],
       concepts: [
@@ -89,7 +90,7 @@ const CURRICULUM = {
       outcome: "게임 정보의 종류와 소유자를 구분하고 이름 대신 식별자가 필요한 상황을 설명할 수 있습니다."
     },
     {
-      id: "06", title: "게임의 시간과 공간", subtitle: "입력 · 프레임 · 좌표", stage: 2, row: 4, col: 2, prerequisites: ["05"],
+      id: "06", title: "게임의 시간과 공간", subtitle: "입력 · 프레임 · 좌표", stage: 2, row: 4, col: 2.5, prerequisites: ["05"],
       description: "게임은 입력을 받고 시간을 진행시키며 달라진 상태를 화면에 표시하는 일을 반복합니다.",
       topics: ["입력·갱신·화면 표시의 반복", "프레임과 경과 시간", "좌표·방향·거리·속도", "충돌·타이머·무작위 결과"],
       concepts: [
@@ -104,7 +105,7 @@ const CURRICULUM = {
       outcome: "시간과 좌표의 기준이 달라 생기는 문제를 구체적인 질문으로 바꿀 수 있습니다."
     },
     {
-      id: "07", title: "상태와 생명주기", subtitle: "언제 시작하고 끝날까?", stage: 2, row: 5, col: 2, prerequisites: ["06"],
+      id: "07", title: "상태와 생명주기", subtitle: "언제 시작하고 끝날까?", stage: 2, row: 5, col: 2.5, prerequisites: ["06"],
       description: "현재 어떤 상태인지, 상태가 바뀔 때 무엇을 시작하고 정리하는지 정합니다.",
       topics: ["대기·진행·일시정지·종료", "전환 조건과 허용되는 행동", "생성·시작·종료·정리 시점", "정보 유지와 초기화"],
       concepts: [
@@ -134,7 +135,7 @@ const CURRICULUM = {
       outcome: "중요한 정보의 소유자와 변경 경로를 설명하고, 수정의 영향을 질문할 수 있습니다."
     },
     {
-      id: "09", title: "콘텐츠와 재사용", subtitle: "아이템을 계속 추가하려면", stage: 2, row: 7, col: 1, prerequisites: ["08"],
+      id: "09", title: "콘텐츠와 재사용", subtitle: "아이템을 계속 추가하려면", stage: 2, row: 7, col: 2, prerequisites: ["08"],
       description: "같은 규칙에 값만 다른 콘텐츠와 새로운 규칙이 필요한 콘텐츠를 구분합니다.",
       topics: ["콘텐츠 데이터와 작동 방식", "공통 기능·개별 설정·예외", "기능 조합과 재사용", "확정된 확장과 막연한 미래 요구"],
       concepts: [
@@ -149,7 +150,7 @@ const CURRICULUM = {
       outcome: "콘텐츠 추가가 데이터 추가인지 새로운 동작 구현인지 판단할 수 있습니다."
     },
     {
-      id: "10", title: "저장과 데이터 변경", subtitle: "게임을 꺼도 남는 정보", stage: 3, row: 7, col: 2, prerequisites: ["08"],
+      id: "10", title: "저장과 데이터 변경", subtitle: "게임을 꺼도 남는 정보", stage: 3, row: 7, col: 1, prerequisites: ["08"],
       description: "저장 위치뿐 아니라 저장 시점, 실패 처리, 업데이트 이후의 해석까지 함께 정합니다.",
       topics: ["메모리·기기 저장·온라인 저장", "저장·불러오기 시점", "실패·손상·초기값", "저장 형식 변경과 기존 기록의 이전"],
       concepts: [
@@ -164,7 +165,7 @@ const CURRICULUM = {
       outcome: "무엇을 어디에 언제 저장할지 정하고 코드 복구와 데이터 복구를 구분할 수 있습니다."
     },
     {
-      id: "11", title: "서버와 외부 서비스", subtitle: "여러 사람의 정보를 연결하기", stage: 3, row: 8, col: 2, prerequisites: ["10"],
+      id: "11", title: "서버와 외부 서비스", subtitle: "여러 사람의 정보를 연결하기", stage: 3, row: 8, col: 1, prerequisites: ["10"],
       description: "내 기기에서 가능한 기능과 여러 사용자가 함께 쓰는 기능에 필요한 역할을 구분합니다.",
       topics: ["사용자 기기와 서버의 역할", "요청·응답·API", "로그인·공통 랭킹·온라인 저장", "통신 실패·지연·중복 요청", "사용자 기기에서 보낸 정보의 검증"],
       concepts: [
@@ -180,7 +181,7 @@ const CURRICULUM = {
       sources: [["GitHub Pages가 제공하는 기능", "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"]]
     },
     {
-      id: "12", title: "오류와 검증", subtitle: "정말 완성됐는지 확인하기", stage: 4, row: 7, col: 3, prerequisites: ["07"],
+      id: "12", title: "오류와 검증", subtitle: "정말 완성됐는지 확인하기", stage: 4, row: 6, col: 4, prerequisites: ["07"],
       description: "오류가 생긴 조건을 설명하고, 수정 후에는 관련된 기존 기능까지 확인합니다.",
       topics: ["기획·구현·설정 문제의 구분", "재현 순서·기대 결과·실제 결과", "오류 메시지와 로그", "경계값·반복 입력·실패 상황", "자동 검사와 직접 플레이의 범위"],
       concepts: [
@@ -195,7 +196,7 @@ const CURRICULUM = {
       outcome: "재현 가능한 오류 보고와 확인 항목을 만들고 검사의 범위를 판단할 수 있습니다."
     },
     {
-      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 8, col: 3, prerequisites: ["12", "08"],
+      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 7, col: 3, prerequisites: ["12", "08"],
       description: "‘최적화’라는 말 대신 어떤 기기와 상황에서 어떤 불편이 생기는지 정의합니다.",
       topics: ["반응 속도·프레임·로딩·메모리", "CPU·GPU·메모리·네트워크의 역할", "대상 기기와 화면 크기", "측정에 근거한 개선", "글자 크기·입력·접근성"],
       concepts: [
@@ -210,7 +211,7 @@ const CURRICULUM = {
       outcome: "품질 문제를 구체적인 조건과 측정 가능한 기준으로 설명할 수 있습니다."
     },
     {
-      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 9, col: 1, prerequisites: ["09", "12"],
+      id: "14", title: "기술과 설계안 선택", subtitle: "지금 필요한 만큼 선택하기", stage: 4, row: 8, col: 2, prerequisites: ["09", "12"],
       description: "유명한 기술인지보다 현재 문제를 해결하고 이후 관리할 수 있는지를 기준으로 비교합니다.",
       topics: ["직접 구현과 도구 도입", "현재 작업량·변경 비용·운영 비용", "버전·호환성·유지보수", "코드와 자원의 라이선스", "작은 검증과 재검토 조건"],
       concepts: [
@@ -225,7 +226,7 @@ const CURRICULUM = {
       outcome: "선택 이유와 대안을 비교하고 어떤 조건에서 결정을 다시 검토할지 기록할 수 있습니다."
     },
     {
-      id: "15", title: "게시와 지속적인 관리", subtitle: "다른 사람이 쓰는 게임으로", stage: 4, row: 10, col: 2, prerequisites: ["11", "14"],
+      id: "15", title: "게시와 지속적인 관리", subtitle: "다른 사람이 쓰는 게임으로", stage: 4, row: 9, col: 2, prerequisites: ["11", "14"],
       description: "게시된 게임의 버전과 접근 범위를 확인하고 업데이트 후 문제가 생겼을 때의 대응을 준비합니다.",
       topics: ["개발 중 버전과 공개 버전", "소스·빌드·배포 결과의 관계", "경로·실행 환경·공개 범위", "비밀키·개인정보·서버의 역할", "복구·데이터 보존·인수인계 기록"],
       concepts: [
