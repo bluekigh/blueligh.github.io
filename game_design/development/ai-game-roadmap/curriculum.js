@@ -120,7 +120,7 @@ const CURRICULUM = {
       outcome: "상태 전환 때 허용할 동작과 초기화·정리할 정보를 정의할 수 있습니다."
     },
     {
-      id: "08", title: "역할과 연결 관계", subtitle: "누가 무엇을 책임질까?", stage: 2, row: 6, col: 2, prerequisites: ["07"],
+      id: "08", title: "역할과 연결 관계", subtitle: "누가 무엇을 책임질까?", stage: 2, row: 6, col: 2, prerequisites: ["07"], splitBottom: true,
       description: "역할을 나누는 목적은 파일 수를 늘리는 것이 아니라 변경의 영향과 정보의 책임을 이해하기 쉽게 만드는 데 있습니다.",
       topics: ["화면·입력·규칙·데이터의 책임", "정보의 기준 위치", "의존 관계와 변경 영향", "직접 요청과 이벤트 알림", "과도한 분리와 공통화의 부담"],
       concepts: [
@@ -196,7 +196,7 @@ const CURRICULUM = {
       outcome: "재현 가능한 오류 보고와 확인 항목을 만들고 검사의 범위를 판단할 수 있습니다."
     },
     {
-      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 7, col: 4, prerequisites: ["12", "08"], routes: { "08": "right-left" },
+      id: "13", title: "성능과 플레이 품질", subtitle: "느리고 불편한 이유 찾기", stage: 4, row: 7, col: 4, prerequisites: ["12", "08"],
       description: "‘최적화’라는 말 대신 어떤 기기와 상황에서 어떤 불편이 생기는지 정의합니다.",
       topics: ["반응 속도·프레임·로딩·메모리", "CPU·GPU·메모리·네트워크의 역할", "대상 기기와 화면 크기", "측정에 근거한 개선", "글자 크기·입력·접근성"],
       concepts: [
