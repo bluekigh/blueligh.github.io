@@ -3,7 +3,7 @@
 const CURRICULUM = {
   version: 1,
   stages: [
-    { id: 1, title: "시작하기", description: "개발의 흐름과 변경 관리" },
+    { id: 1, title: "시작하기", description: "개발의 흐름과 요구사항" },
     { id: 2, title: "구조 이해하기", description: "정보 · 시간 · 상태 · 책임" },
     { id: 3, title: "저장과 연결", description: "정보의 보관과 온라인 기능" },
     { id: 4, title: "검증하고 발전시키기", description: "품질 · 기술 선택 · 공개" }
@@ -56,7 +56,7 @@ const CURRICULUM = {
       outcome: "막연한 기능 요청을 규칙·예외·완료 기준이 있는 요구사항으로 바꿀 수 있습니다."
     },
     {
-      id: "04", title: "Git과 변경 기록", subtitle: "무엇을 남기고 되돌릴까?", stage: 1, row: 3, col: 1, prerequisites: ["02", "03"],
+      id: "04", reference: true, title: "Git과 변경 기록", subtitle: "무엇을 남기고 되돌릴까?", stage: 1, row: 3, col: 1, prerequisites: ["02", "03"],
       description: "AI가 많은 파일을 수정해도 변경의 이유와 돌아갈 지점을 이해할 수 있도록 기록합니다.",
       topics: ["Git·GitHub·GitHub Pages의 차이", "저장소·변경 내역·스테이징·커밋", "작업 파일·로컬 기록·원격 저장소", "브랜치·병합·충돌", "복구 범위와 공개하면 안 되는 파일"],
       concepts: [
@@ -73,7 +73,7 @@ const CURRICULUM = {
       sources: [["Git · 버전 관리란", "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"], ["GitHub · Git과 GitHub", "https://docs.github.com/en/get-started/start-your-journey/what-is-github"], ["GitHub Pages 소개", "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"]]
     },
     {
-      id: "05", title: "게임 정보의 표현", subtitle: "값 · 목록 · 식별자 · 규칙", stage: 2, row: 3, col: 3, prerequisites: ["02", "03"],
+      id: "05", title: "게임 정보의 표현", subtitle: "값 · 목록 · 식별자 · 규칙", stage: 2, row: 3, col: 2, prerequisites: ["02", "03"],
       description: "게임의 정보가 무엇이고 어떤 관계를 가지는지 이해하면 세부 문법을 몰라도 데이터 구조를 논의할 수 있습니다.",
       topics: ["숫자·문자·참과 거짓 등의 자료형", "변수·상수·목록·개체", "고유 식별자와 참조", "조건·반복·함수"],
       concepts: [
@@ -89,7 +89,7 @@ const CURRICULUM = {
       outcome: "게임 정보의 종류와 소유자를 구분하고 이름 대신 식별자가 필요한 상황을 설명할 수 있습니다."
     },
     {
-      id: "06", title: "게임의 시간과 공간", subtitle: "입력 · 프레임 · 좌표", stage: 2, row: 4, col: 3, prerequisites: ["05"],
+      id: "06", title: "게임의 시간과 공간", subtitle: "입력 · 프레임 · 좌표", stage: 2, row: 4, col: 2, prerequisites: ["05"],
       description: "게임은 입력을 받고 시간을 진행시키며 달라진 상태를 화면에 표시하는 일을 반복합니다.",
       topics: ["입력·갱신·화면 표시의 반복", "프레임과 경과 시간", "좌표·방향·거리·속도", "충돌·타이머·무작위 결과"],
       concepts: [
@@ -180,7 +180,7 @@ const CURRICULUM = {
       sources: [["GitHub Pages가 제공하는 기능", "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"]]
     },
     {
-      id: "12", title: "오류와 검증", subtitle: "정말 완성됐는지 확인하기", stage: 4, row: 7, col: 3, prerequisites: ["04", "07"],
+      id: "12", title: "오류와 검증", subtitle: "정말 완성됐는지 확인하기", stage: 4, row: 7, col: 3, prerequisites: ["07"],
       description: "오류가 생긴 조건을 설명하고, 수정 후에는 관련된 기존 기능까지 확인합니다.",
       topics: ["기획·구현·설정 문제의 구분", "재현 순서·기대 결과·실제 결과", "오류 메시지와 로그", "경계값·반복 입력·실패 상황", "자동 검사와 직접 플레이의 범위"],
       concepts: [
