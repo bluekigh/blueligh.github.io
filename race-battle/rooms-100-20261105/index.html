@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#07121c">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../app-icons/icon-192.png">
   <title>Race Battle</title>
   <link rel="icon" href="TemplateData/favicon.ico?v=9c13beb90ee8f705">
   <style>:root{color-scheme:dark;font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:#07121c;color:#f4f8fb}
@@ -38,9 +41,6 @@ body[data-race-state="failed"] .activity-dot{animation:none;background:#ffad89;b
 @media(max-height:480px) and (min-width:520px){#race-loading{padding:14px}.loading-card{width:min(100%,620px);padding:20px 28px}.brand{margin-bottom:16px}.brand-mark{width:27px;height:27px;font-size:24px}.eyebrow{margin-bottom:8px}h1{font-size:23px}#loading-status{margin:7px 0 12px}.progress-label{margin-bottom:5px}#loading-percent{font-size:25px}#loading-hint{margin-top:12px}.loading-bottom{display:none}#loading-actions{margin-top:10px}}
 @media(prefers-reduced-motion:reduce){.activity-dot{animation:none}#loading-fill{transition:none}}
 </style>
-  <link rel="manifest" href="../manifest.webmanifest">
-  <link rel="apple-touch-icon" href="../app-icons/icon-192.png">
-  <meta name="mobile-web-app-capable" content="yes">
 </head>
 <body data-race-state="loading">
   <div id="unity-container">
@@ -67,7 +67,7 @@ body[data-race-state="failed"] .activity-dot{animation:none;background:#ffad89;b
       <div class="loading-bottom">준비가 끝나면 닉네임을 입력하고 바로 입장하세요.</div>
     </section>
   </main>
-  <script id="race-build-config" type="application/json">{"loaderUrl": "Build/WebGL.loader.js?v=414aba7e03a21e86", "config": {"dataUrl": "Build/WebGL.data.unityweb?v=41547743f994352a", "frameworkUrl": "Build/WebGL.framework.js.unityweb?v=8e4a8981bee28afc", "codeUrl": "Build/WebGL.wasm.unityweb?v=386fa77ffe0bdbcf", "streamingAssetsUrl": "StreamingAssets", "companyName": "bluelighgamebox", "productName": "racebattle", "productVersion": "0.5.1", "arguments": []}}</script>
+  <script id="race-build-config" type="application/json">{"loaderUrl": "Build/WebGL.loader.js?v=1b44767d3d78f1a6", "config": {"dataUrl": "Build/WebGL.data.unityweb?v=e10b221b00957f77", "frameworkUrl": "Build/WebGL.framework.js.unityweb?v=3510a6fa7c317680", "codeUrl": "Build/WebGL.wasm.unityweb?v=d8234f343cb6b5e9", "streamingAssetsUrl": "StreamingAssets", "companyName": "bluelighgamebox", "productName": "racebattle", "productVersion": "0.5.1", "arguments": []}}</script>
   <script>(() => {
   "use strict";
   const byId = id => document.getElementById(id);
